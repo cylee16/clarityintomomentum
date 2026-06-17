@@ -119,6 +119,12 @@ h3 {
 .site-footer a:hover {
   color: var(--rose);
 }
+.site-nav a:visited {
+  color: #e8f0e6;
+}
+.site-nav a:visited:hover {
+  color: var(--rose);
+}
 
 .nav-toggle {
   display: none;
