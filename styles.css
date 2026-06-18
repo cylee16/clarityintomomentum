@@ -610,6 +610,18 @@ cite {
     padding: 14px;
   }
 
+  .site-nav a,
+  .site-nav a:visited,
+  .site-nav a:link {
+    color: var(--espresso);
+  }
+
+  .site-nav a:hover,
+  .site-nav a.active,
+  .site-nav a:visited:hover {
+    color: var(--rose);
+  }
+
   .card-grid.four,
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
