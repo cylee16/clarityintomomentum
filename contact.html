@@ -59,9 +59,18 @@
           <p class="eyebrow muted">Prefer to reach out directly?</p>
           <h2>Send me an email</h2>
           <p style="color:#6d625c; font-size:1.08rem; font-weight:500; margin-top:16px;">I&rsquo;d love to hear from you. Whether you have questions about a program or just want to say hello &mdash; my inbox is open.</p>
-          <a class="button" href="https://mail.google.com/mail/?view=cm&to=clarityintomomentum@gmail.com" target="_blank" rel="noopener" style="margin-top:32px;">
-            <i data-lucide="mail"></i> clarityintomomentum@gmail.com
-          </a>
+          <p style="margin-top:28px;">
+            <a href="mailto:clarityintomomentum@gmail.com" style="font-family:'Cormorant Garamond',Georgia,serif; font-size:1.6rem; color:#8a9e85; text-decoration:none; font-weight:600; border-bottom:1px solid #c9d4c5; padding-bottom:2px;">clarityintomomentum@gmail.com</a>
+          </p>
+          <div style="margin-top:24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a class="button" href="mailto:clarityintomomentum@gmail.com">
+              <i data-lucide="mail"></i> Open in email app
+            </a>
+            <button type="button" id="copy-email-btn" class="button button-secondary" style="cursor:pointer; border:none;">
+              <i data-lucide="copy"></i> Copy email address
+            </button>
+          </div>
+          <p id="copy-confirm" style="margin-top:14px; color:#8a9e85; font-weight:700; font-size:0.9rem; visibility:hidden;">Copied to clipboard!</p>
         </div>
       </section>
 
@@ -89,6 +98,23 @@
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      (function(){
+        var btn = document.getElementById('copy-email-btn');
+        var confirm = document.getElementById('copy-confirm');
+        if (btn) {
+          btn.addEventListener('click', function(){
+            var email = 'clarityintomomentum@gmail.com';
+            function show(){ if(confirm){ confirm.style.visibility='visible'; setTimeout(function(){ confirm.style.visibility='hidden'; }, 2500); } }
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(email).then(show).catch(function(){ window.prompt('Copy this email address:', email); });
+            } else {
+              window.prompt('Copy this email address:', email);
+            }
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
 
