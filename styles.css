@@ -370,9 +370,11 @@ h3 {
 
 blockquote {
   margin: 0;
-  padding: 34px 42px;
+  padding: 38px 44px;
   border-left: 4px solid #ce98ad;
-  background: var(--cream);
+  background: #ffffff;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 18px 40px rgba(64, 52, 46, 0.10);
 }
 
 blockquote p {
