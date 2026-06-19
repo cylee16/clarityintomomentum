@@ -100,23 +100,6 @@
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
-    <script>
-      (function(){
-        var btn = document.getElementById('copy-email-btn');
-        var confirm = document.getElementById('copy-confirm');
-        if (btn) {
-          btn.addEventListener('click', function(){
-            var email = 'clarityintomomentum@gmail.com';
-            function show(){ if(confirm){ confirm.style.visibility='visible'; setTimeout(function(){ confirm.style.visibility='hidden'; }, 2500); } }
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(email).then(show).catch(function(){ window.prompt('Copy this email address:', email); });
-            } else {
-              window.prompt('Copy this email address:', email);
-            }
-          });
-        }
-      })();
-    </script>
   </body>
 </html>
 
