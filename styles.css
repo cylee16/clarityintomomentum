@@ -734,3 +734,101 @@ cite {
     font-size: 1.08rem;
   }
 }
+
+
+/* ===== Stacked program rows ===== */
+.program-rows { display: flex; flex-direction: column; gap: 26px; }
+.program-row {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.program-row.featured { border: 2px solid #2D7D7D; }
+.program-row .topbar { height: 5px; }
+.program-row-inner {
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 34px;
+  align-items: start;
+}
+.program-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  padding: 5px 13px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+.program-row h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--espresso);
+  margin: 0 0 4px;
+  line-height: 1.05;
+}
+.program-tagline {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #8a7f78;
+  margin: 0 0 18px;
+}
+.program-sub {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin: 0 0 7px;
+}
+.program-text { font-size: 0.95rem; color: var(--muted); font-weight: 500; line-height: 1.6; margin: 0 0 18px; }
+.program-text:last-child { margin-bottom: 0; }
+.program-inc-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin: 0 0 12px;
+}
+.program-inc { list-style: none; padding: 0; margin: 0; }
+.program-inc li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.45;
+  padding-left: 22px;
+  position: relative;
+  margin-bottom: 9px;
+}
+.program-inc li:before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+  font-weight: 800;
+}
+.price-box {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-top: 20px;
+}
+.price-main {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--espresso);
+  margin: 0 0 2px;
+  line-height: 1;
+}
+.price-sub { font-size: 0.82rem; color: var(--muted); font-weight: 700; margin: 4px 0 0; }
+.price-std { font-size: 0.76rem; color: #9a8c84; font-weight: 600; margin: 8px 0 0; line-height: 1.4; }
+
+@media (max-width: 860px) {
+  .program-row-inner { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
+}
