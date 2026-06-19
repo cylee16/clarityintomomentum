@@ -832,3 +832,29 @@ cite {
 @media (max-width: 860px) {
   .program-row-inner { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
 }
+
+
+/* ===== FAQ ===== */
+.faq-list { display: flex; flex-direction: column; gap: 14px; }
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px 30px;
+}
+.faq-item h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--espresso);
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+.faq-item p {
+  font-size: 0.98rem;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.65;
+  margin: 0;
+}
+.faq-item em { font-style: italic; color: var(--espresso); }
