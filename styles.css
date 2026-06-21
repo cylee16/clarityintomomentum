@@ -903,3 +903,25 @@ cite {
 }
 .faq-open .faq-a > p { padding: 0 26px 24px; }
 .faq-a em { font-style: italic; color: var(--espresso); }
+
+
+/* ===== Responsive resource/guide cards ===== */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+.resource-grid .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* Ensure the download button sits at the bottom and spans the card */
+.resource-grid .card .button {
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .resource-grid { gap: 16px; }
+}
