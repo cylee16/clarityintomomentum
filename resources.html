@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Free Resources | Clarity Into Momentum</title>
-    <meta name="description" content="Free guides to help you reconnect with yourself and find your next clear step — the Wheel of Life assessment, reclaiming your energy, and the identity shift.">
-    <!-- Open Graph / link preview -->
+    <meta name="description" content="Download the free Clarity Starter Kit — five tools to help you see yourself clearly and find your next step. Delivered instantly to your inbox.">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clarity Into Momentum">
     <meta property="og:title" content="Free Resources | Clarity Into Momentum">
@@ -22,6 +22,141 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Kit card styles */
+      .kit-card {
+        background: var(--espresso);
+        border-radius: 18px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        box-shadow: 0 24px 64px rgba(61,53,48,0.18);
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      .kit-left { padding: 52px 48px; display: flex; flex-direction: column; }
+      .kit-badge {
+        display: inline-flex; align-items: center; gap: 6px;
+        background: var(--sage); color: #1f3320;
+        font-size: 10px; font-weight: 800; letter-spacing: 0.08em;
+        padding: 5px 14px; border-radius: 100px;
+        margin-bottom: 22px; align-self: flex-start;
+      }
+      .kit-left h2 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 2.5rem; font-weight: 600; color: #faf6f1;
+        line-height: 1.08; margin-bottom: 8px;
+      }
+      .kit-tagline {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-style: italic; font-size: 1.15rem;
+        color: #b8ada6; margin-bottom: 18px;
+      }
+      .kit-desc {
+        color: #d1c6be; font-size: 0.92rem; font-weight: 500;
+        line-height: 1.7; margin-bottom: 24px;
+      }
+      .kit-tools { display: flex; flex-direction: column; gap: 9px; margin-bottom: 28px; }
+      .kit-tool { display: flex; align-items: center; gap: 11px; }
+      .kit-num {
+        width: 22px; height: 22px; border-radius: 50%;
+        background: var(--teal); color: #fff;
+        font-size: 9px; font-weight: 800;
+        display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      }
+      .kit-tool span { font-size: 12.5px; font-weight: 600; color: #e8f0e6; }
+      /* Form area */
+      .form-area {
+        background: rgba(255,255,255,0.07);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 12px; padding: 24px;
+      }
+      .form-label {
+        font-size: 11px; font-weight: 800; letter-spacing: 0.08em;
+        text-transform: uppercase; color: var(--sage);
+        margin-bottom: 14px; display: block;
+      }
+      .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+      .form-input {
+        width: 100%; background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.18); border-radius: 7px;
+        padding: 11px 14px; font-family: "Raleway", Arial, sans-serif;
+        font-size: 13px; font-weight: 500; color: #faf6f1; outline: none;
+        transition: border-color 0.2s;
+      }
+      .form-input::placeholder { color: rgba(255,255,255,0.35); font-weight: 400; }
+      .form-input:focus { border-color: var(--sage); background: rgba(255,255,255,0.14); }
+      .form-submit {
+        width: 100%; background: var(--sage); color: #1f3320;
+        font-family: "Raleway", Arial, sans-serif; font-weight: 800;
+        font-size: 14px; padding: 13px; border-radius: 8px;
+        border: none; cursor: pointer; transition: background 0.2s;
+      }
+      .form-submit:hover { background: #9ab89e; }
+      .form-note { font-size: 11px; color: rgba(255,255,255,0.35); font-weight: 600; margin-top: 10px; text-align: center; }
+      .form-privacy { font-size: 10px; color: rgba(255,255,255,0.22); font-weight: 600; margin-top: 5px; text-align: center; }
+      .form-success {
+        display: none; background: rgba(138,158,133,0.2);
+        border: 1px solid rgba(138,158,133,0.4);
+        border-radius: 12px; padding: 28px 24px; text-align: center;
+      }
+      .form-success h4 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1.4rem; font-weight: 600; color: #faf6f1; margin-bottom: 6px;
+      }
+      .form-success p { font-size: 12px; color: #b8ada6; font-weight: 500; }
+      /* Right panel */
+      .kit-right {
+        background: #2c2724; padding: 52px 40px;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center; gap: 22px;
+      }
+      .page-mocks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; width: 100%; }
+      .mock { border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+      .mock-top {
+        height: 88px; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 4px; padding: 10px;
+      }
+      .mock-lbl { font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+      .mock-ttl { font-family: "Cormorant Garamond", serif; font-size: 12px; font-weight: 600; text-align: center; line-height: 1.2; }
+      .mock-body { background: #faf6f1; padding: 8px 10px; display: flex; flex-direction: column; gap: 5px; }
+      .ml { height: 3px; border-radius: 2px; background: #e0d8cc; }
+      .ml.a { background: #2D7D7D; opacity: 0.5; }
+      .ml.s { width: 55%; }
+      .ml.m { width: 75%; }
+      .mock-caption { font-size: 11px; color: #6d625c; font-weight: 700; text-align: center; letter-spacing: 0.04em; }
+      .trust-row { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+      .trust-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #6d625c; font-weight: 700; }
+      .trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--sage); }
+      /* What's inside */
+      .inside-strip { background: var(--teal); }
+      .inside-strip .section-inner h2 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1.7rem; font-weight: 600; color: #faf6f1;
+        text-align: center; margin-bottom: 32px;
+      }
+      .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 14px; }
+      .tool-card {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.14);
+        border-radius: 10px; padding: 20px 16px;
+      }
+      .tool-num { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; color: var(--blush); margin-bottom: 7px; }
+      .tool-card h3 {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1rem; font-weight: 600; color: #faf6f1; margin-bottom: 5px; line-height: 1.2;
+      }
+      .tool-card p { font-size: 10.5px; color: rgba(255,255,255,0.58); font-weight: 500; line-height: 1.5; }
+      @media (max-width: 860px) {
+        .kit-card { grid-template-columns: 1fr; }
+        .kit-right { padding: 36px 28px; }
+        .form-row { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 600px) {
+        .kit-left { padding: 32px 24px; }
+        .tools-grid { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -39,45 +174,119 @@
     </header>
 
     <main>
+
       <section class="page-hero section-cream">
         <div class="section-inner narrow">
           <p class="eyebrow">Free resources</p>
-          <h1>Free guides to help you begin</h1>
-          <p>A few simple, supportive tools to help you reconnect with yourself and find your next clear step &mdash; no strings, just a place to start.</p>
+          <h1>One kit. Five tools.<br>A clearer path forward.</h1>
+          <p>Everything you need to see yourself clearly and find your next honest step &mdash; in one free download, delivered straight to your inbox.</p>
         </div>
       </section>
 
       <section class="section-white">
         <div class="section-inner">
-          <div class="card-grid resource-grid">
-
-            <article class="card" style="display:flex; flex-direction:column;">
-              <i data-lucide="circle-dashed"></i>
-              <h3>The Whole Wheel of Life Assessment</h3>
-              <p>A gentle self-check across the key areas of your life &mdash; see at a glance where you feel full and where you feel stretched thin.</p>
-              <div style="margin-top:auto; padding-top:20px;">
-                <a class="button" href="guides/whole-life-wheel.pdf" target="_blank" rel="noopener" style="width:100%; box-sizing:border-box;">Download free guide <span aria-hidden="true">&rarr;</span></a>
+          <div class="kit-card">
+            <div class="kit-left">
+              <span class="kit-badge">&#10022; Free download</span>
+              <h2>The Clarity<br>Starter Kit</h2>
+              <p class="kit-tagline">Five tools to help you find your way back to yourself.</p>
+              <p class="kit-desc">A complete set of self-assessment and reflection tools &mdash; the same ones used inside every Clarity Into Momentum coaching program. Work through it in about 20&ndash;30 minutes and you&rsquo;ll know exactly where you are and what&rsquo;s actually getting in the way.</p>
+              <div class="kit-tools">
+                <div class="kit-tool"><span class="kit-num">01</span><span>The Whole-Life Snapshot</span></div>
+                <div class="kit-tool"><span class="kit-num">02</span><span>The Energy Audit</span></div>
+                <div class="kit-tool"><span class="kit-num">03</span><span>The Identity Reset Prompts</span></div>
+                <div class="kit-tool"><span class="kit-num">04</span><span>The 5-Pillar Clarity Checklist</span></div>
+                <div class="kit-tool"><span class="kit-num">05</span><span>A Letter from Cylee</span></div>
               </div>
-            </article>
 
-            <article class="card" style="display:flex; flex-direction:column;">
-              <i data-lucide="zap"></i>
-              <h3>Reclaiming Your Energy</h3>
-              <p>Practical, grounded ways to protect and restore your energy when life keeps asking more of you than you have to give.</p>
-              <div style="margin-top:auto; padding-top:20px;">
-                <a class="button" href="#" style="width:100%; box-sizing:border-box;">Get the free guide <span aria-hidden="true">&rarr;</span></a>
+              <!-- MAILERLITE FORM GOES HERE — replace this block with your MailerLite embed code -->
+              <div class="form-area" id="kit-form-area">
+                <span class="form-label">Send me the free kit</span>
+                <div class="form-row">
+                  <input class="form-input" type="text" placeholder="First name" id="kit-name">
+                  <input class="form-input" type="email" placeholder="Email address" id="kit-email">
+                </div>
+                <button class="form-submit" type="button" id="kit-submit">Yes, send me the kit &rarr;</button>
+                <p class="form-note">Delivered instantly to your inbox &middot; Free forever</p>
+                <p class="form-privacy">No spam, ever. Unsubscribe anytime. Your email is safe with me.</p>
               </div>
-            </article>
-
-            <article class="card" style="display:flex; flex-direction:column;">
-              <i data-lucide="sparkles"></i>
-              <h3>The Identity Shift</h3>
-              <p>A guided reflection to help you move from who you&rsquo;ve been managing to who you actually want to become.</p>
-              <div style="margin-top:auto; padding-top:20px;">
-                <a class="button" href="#" style="width:100%; box-sizing:border-box;">Get the free guide <span aria-hidden="true">&rarr;</span></a>
+              <div class="form-success" id="kit-success">
+                <h4>It&rsquo;s on its way! &#10022;</h4>
+                <p>Check your inbox in the next minute or two. If you don&rsquo;t see it, check your spam folder and mark it as safe.</p>
               </div>
-            </article>
+            </div>
 
+            <div class="kit-right">
+              <div class="page-mocks">
+                <div class="mock">
+                  <div class="mock-top" style="background:#2D7D7D;">
+                    <span class="mock-lbl" style="color:rgba(255,255,255,0.7);">Clarity Into Momentum</span>
+                    <span class="mock-ttl" style="color:#faf6f1;">The Clarity<br><em>Starter Kit</em></span>
+                  </div>
+                  <div class="mock-body"><div class="ml a"></div><div class="ml s"></div><div class="ml m"></div></div>
+                </div>
+                <div class="mock">
+                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #2D7D7D;">
+                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 01</span>
+                    <span class="mock-ttl" style="color:#faf6f1;">Whole-Life<br>Snapshot</span>
+                  </div>
+                  <div class="mock-body"><div class="ml"></div><div class="ml a s"></div><div class="ml m"></div></div>
+                </div>
+                <div class="mock">
+                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #7A9E7E;">
+                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 02</span>
+                    <span class="mock-ttl" style="color:#faf6f1;">Energy<br>Audit</span>
+                  </div>
+                  <div class="mock-body"><div class="ml m"></div><div class="ml s"></div><div class="ml a"></div></div>
+                </div>
+                <div class="mock">
+                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #D4A0A0;">
+                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 05</span>
+                    <span class="mock-ttl" style="color:#faf6f1;">A Letter<br>from Cylee</span>
+                  </div>
+                  <div class="mock-body"><div class="ml s"></div><div class="ml"></div><div class="ml m"></div></div>
+                </div>
+              </div>
+              <p class="mock-caption">7 pages &middot; Printable PDF &middot; 20&ndash;30 min</p>
+              <div class="trust-row">
+                <span class="trust-item"><span class="trust-dot"></span>Free forever</span>
+                <span class="trust-item"><span class="trust-dot"></span>No spam</span>
+                <span class="trust-item"><span class="trust-dot"></span>Unsubscribe anytime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="inside-strip">
+        <div class="section-inner">
+          <h2>What&rsquo;s inside</h2>
+          <div class="tools-grid">
+            <div class="tool-card">
+              <p class="tool-num">01</p>
+              <h3>The Whole-Life Snapshot</h3>
+              <p>Rate nine key dimensions honestly &mdash; and see at a glance where you actually stand.</p>
+            </div>
+            <div class="tool-card">
+              <p class="tool-num">02</p>
+              <h3>The Energy Audit</h3>
+              <p>Name what&rsquo;s draining you, what restores you, and where the real gap is.</p>
+            </div>
+            <div class="tool-card">
+              <p class="tool-num">03</p>
+              <h3>The Identity Reset Prompts</h3>
+              <p>Five prompts to find the thread of who you actually are underneath all the roles.</p>
+            </div>
+            <div class="tool-card">
+              <p class="tool-num">04</p>
+              <h3>The 5-Pillar Clarity Checklist</h3>
+              <p>One honest question per pillar. One small, realistic step. Five areas of your whole life.</p>
+            </div>
+            <div class="tool-card">
+              <p class="tool-num">05</p>
+              <h3>A Letter from Cylee</h3>
+              <p>A personal note &mdash; because you deserve to hear that you&rsquo;re not broken. You just need a clearer path.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -85,10 +294,12 @@
       <section class="cta-band">
         <div class="section-inner narrow">
           <h2>Want more than a guide?</h2>
-          <p>The free 4-week Clear. Focused. Forward. experience is the perfect next step &mdash; gentle, guided, and built around your real life.</p>
+          <p>The free 4-week Clear. Focused. Forward. program is the natural next step &mdash; gentle, guided, and built entirely around you.</p>
           <a class="button" href="clear-focused-forward.html">Explore the free program <span aria-hidden="true">&rarr;</span></a>
+          <p class="fine-print">Free &middot; 4 weeks &middot; Limited spots</p>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -107,5 +318,23 @@
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      // Placeholder form handler — replace with MailerLite embed when ready
+      var btn = document.getElementById('kit-submit');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          var name = document.getElementById('kit-name').value.trim();
+          var email = document.getElementById('kit-email').value.trim();
+          if (!email || !email.includes('@')) {
+            document.getElementById('kit-email').focus();
+            return;
+          }
+          // Temporary: open PDF directly until MailerLite is connected
+          window.open('guides/clarity-starter-kit.pdf', '_blank');
+          document.getElementById('kit-form-area').style.display = 'none';
+          document.getElementById('kit-success').style.display = 'block';
+        });
+      }
+    </script>
   </body>
 </html>
