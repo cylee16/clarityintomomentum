@@ -479,8 +479,8 @@ cite {
   display: grid;
   width: min(calc(100% - 64px), 1080px);
   margin: 0 auto;
-  padding: 86px 0;
-  gap: 58px;
+  padding: 56px 0;
+  gap: 40px;
 }
 
 .split-layout {
