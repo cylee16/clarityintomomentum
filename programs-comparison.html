@@ -36,6 +36,8 @@
       .cmp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 0 0 3.5rem; }
       .cmp-card { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 6rem; }
       .cmp-card.featured { border: 2px solid #2D7D7D; }
+      @keyframes cmp-glow { 0% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0.55); transform: scale(1.015); } 100% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0); transform: scale(1); } }
+      .cmp-card:target { animation: cmp-glow 1.6s ease-out both; }
       .cmp-card-head { padding: 1.1rem 1.3rem; }
       .cmp-card-head h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 1.3rem; color: #faf6f1; margin: 0; }
       .cmp-card-head .cmp-meta { font-size: 0.78rem; font-weight: 600; margin: 5px 0 0; }
