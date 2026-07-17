@@ -43,6 +43,36 @@
       .hero-b-pull p:first-child { font-family:'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; font-style: italic; color:#3d3530; margin: 0 0 5px; line-height: 1.6; }
       .hero-b-pull p:last-child { font-size: 0.8rem; color:#6d625c; margin: 0; }
       @media (max-width: 640px) { .hero-b-card { text-align:center; } .hero-b-text { text-align:center; } .hero-b .hero-actions, .hero-b .credentials { justify-content:center; } }
+      .tight { padding: 56px 0 !important; min-height: 0 !important; }
+      .sec-eyebrow { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A24B; font-weight: 700; text-align: center; margin: 0 0 8px; }
+      .sec-title { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 500; text-align: center; margin: 0 0 6px; }
+      .sec-sub { font-size: 0.92rem; color: #6d625c; text-align: center; margin: 0 0 28px; }
+      .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; max-width: 62rem; margin: 0 auto; }
+      .who-tile { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 12px; padding: 1rem 1.1rem; }
+      .who-tile h3 { font-family: Raleway, sans-serif; font-size: 0.88rem; font-weight: 700; color: #2D7D7D; margin: 0 0 4px; }
+      .who-tile p { font-size: 0.82rem; color: #6d625c; margin: 0; line-height: 1.6; }
+      .path-strip { display: flex; align-items: flex-start; gap: 6px; flex-wrap: wrap; justify-content: center; max-width: 58rem; margin: 0 auto; }
+      .path-step { flex: 1; min-width: 130px; text-align: center; padding: 0.5rem 0.4rem; }
+      .path-step .num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; color: #C9A24B; font-weight: 600; margin: 0; line-height: 1; }
+      .path-step h3 { font-family: Raleway, sans-serif; font-size: 0.85rem; font-weight: 700; color: #3d3530; margin: 8px 0 3px; }
+      .path-step p { font-size: 0.76rem; color: #6d625c; margin: 0; line-height: 1.55; }
+      .path-arrow { color: #d9cfc5; font-size: 1.2rem; align-self: center; padding-top: 4px; }
+      .quote-band { background: #2D7D7D; border-radius: 16px; padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 2.5rem); text-align: center; max-width: 56rem; margin: 0 auto; }
+      .quote-band .sec-eyebrow { margin-bottom: 12px; }
+      .quote-band blockquote { margin: 0; }
+      .quote-band .pulled { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.35rem); font-style: italic; color: #faf6f1; margin: 0 0 10px; line-height: 1.65; }
+      .quote-band cite { font-style: normal; font-size: 0.82rem; color: #cde5e0; }
+      .quote-band .story-link { display: inline-block; margin-top: 12px; font-size: 0.82rem; color: #cde5e0; text-decoration: underline; }
+      .rae-full { max-width: 46rem; margin: 28px auto 0; background: #faf6f1; border: 1px solid #e7ded6; border-radius: 14px; padding: 1.5rem 1.75rem; scroll-margin-top: 6rem; }
+      .rae-full p { font-size: 0.88rem; color: #3d3530; line-height: 1.75; }
+      .rae-full cite { font-style: normal; font-size: 0.82rem; color: #6d625c; font-weight: 700; }
+      .kit-banner { background: #fff; border: 1px solid #e7ded6; border-radius: 16px; padding: 1.5rem 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; max-width: 56rem; margin: 0 auto; text-align: left; }
+      .kit-banner .kit-text { flex: 1; min-width: 250px; }
+      .kit-banner h2 { font-size: 1.3rem; font-weight: 500; margin: 0 0 5px; text-align: left; }
+      .kit-banner .sec-eyebrow { text-align: left; margin-bottom: 5px; }
+      .kit-banner .kit-desc { font-size: 0.88rem; color: #6d625c; margin: 0 0 6px; line-height: 1.6; }
+      .kit-banner .kit-tools { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 0.92rem; color: #2D7D7D; margin: 0; }
+      @media (max-width: 640px) { .kit-banner { text-align: center; } .kit-banner h2, .kit-banner .sec-eyebrow { text-align: center; } .path-arrow { display: none; } }
     </style>
   </head>
   <body>
@@ -108,78 +138,76 @@
       </section>
 
       <section class="section-white" id="who">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow muted">Who this is for</p>
-            <h2>You might be exactly who I work with</h2>
-            <p>If any of these feel familiar, you're in the right place.</p>
-          </div>
-          <div class="card-grid four">
-            <article class="card">
-              <i data-lucide="clock-3"></i>
+        <div class="section-inner tight">
+          <p class="sec-eyebrow">Who this is for</p>
+          <h2 class="sec-title">You might be exactly who I work with</h2>
+          <p class="sec-sub">If any of these feel familiar, you're in the right place.</p>
+          <div class="who-grid">
+            <article class="who-tile">
               <h3>The busy mom</h3>
-              <p>You give everything to everyone else. Your health and happiness keep getting pushed to last on the list.</p>
+              <p>Everyone else comes first. You keep landing last on your own list.</p>
             </article>
-            <article class="card">
-              <i data-lucide="map-off"></i>
+            <article class="who-tile">
               <h3>Feeling lost at 40+</h3>
-              <p>Life shifted and you're not sure who you are anymore outside of your roles. You're ready to rediscover yourself.</p>
+              <p>Life looks fine on paper &mdash; it just doesn't feel like yours anymore.</p>
             </article>
-            <article class="card">
-              <i data-lucide="repeat-2"></i>
+            <article class="who-tile">
               <h3>Stuck in old patterns</h3>
-              <p>You know what you should do - eat better, move more, stress less - but something keeps getting in the way.</p>
+              <p>You know exactly what to do. Doing it is another story.</p>
             </article>
-            <article class="card">
-              <i data-lucide="trending-up"></i>
+            <article class="who-tile">
               <h3>Ready to upgrade</h3>
-              <p>Life is okay, but you know it could be better. You want more energy, more clarity, and more intention.</p>
+              <p>Nothing's wrong, exactly. You just know there's more.</p>
             </article>
           </div>
         </div>
       </section>
 
       <section class="section-blush" id="process">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow muted">How it works</p>
-            <h2>A structured path to real, lasting change</h2>
-            <p>No guesswork. No generic advice. A proven, science-based process built around your life.</p>
-          </div>
-          <div class="process-grid">
-            <article class="process-card">
-              <span>01</span>
+        <div class="section-inner tight">
+          <p class="sec-eyebrow">How it works</p>
+          <h2 class="sec-title">A structured path to real, lasting change</h2>
+          <p class="sec-sub">No guesswork. No generic advice. A proven, science-based process built around your life.</p>
+          <div class="path-strip">
+            <div class="path-step">
+              <p class="num">01</p>
               <h3>Get clear</h3>
-              <p>We start with a deep dive into where you are and where you truly want to go. Clarity before action.</p>
-            </article>
-            <article class="process-card">
-              <span>02</span>
+              <p>Where you are, where you truly want to go</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">&rarr;</span>
+            <div class="path-step">
+              <p class="num">02</p>
               <h3>Build your plan</h3>
-              <p>Together we design a realistic, personalized roadmap that fits your life - not someone else's ideal.</p>
-            </article>
-            <article class="process-card">
-              <span>03</span>
+              <p>A realistic roadmap that fits your life</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">&rarr;</span>
+            <div class="path-step">
+              <p class="num">03</p>
               <h3>Take action</h3>
-              <p>With ongoing support and accountability, you implement changes that actually stick this time.</p>
-            </article>
-            <article class="process-card">
-              <span>04</span>
+              <p>Steady support and real accountability</p>
+            </div>
+            <span class="path-arrow" aria-hidden="true">&rarr;</span>
+            <div class="path-step">
+              <p class="num">04</p>
               <h3>Build momentum</h3>
-              <p>Small wins compound. You build confidence, energy, and a life that genuinely feels like yours again.</p>
-            </article>
+              <p>Small wins compound into confidence</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section-white">
-        <div class="section-inner narrow">
-          <div class="section-heading">
-            <p class="eyebrow muted">Kind words</p>
-            <h2>What clients say</h2>
-            <p>Real words from real women who decided to choose themselves.</p>
-          </div>
-          <div class="testimonials">
+        <div class="section-inner tight">
+          <div class="quote-band">
+            <p class="sec-eyebrow">Kind words</p>
             <blockquote>
+              <p class="pulled">&ldquo;She helped me understand what was really holding me back &mdash; and gave me the support and accountability I needed to move forward.&rdquo;</p>
+              <cite>&mdash; Rae</cite>
+            </blockquote>
+            <a class="story-link" href="#rae-story">Read her full story &darr;</a>
+          </div>
+          <div class="rae-full" id="rae-story">
+            <blockquote style="margin:0;">
               <p>&ldquo;I was stuck. I&rsquo;ve worked with personal trainers before. I know what workouts to do, what foods I should be eating, the importance of sleep, hydration &mdash; all the things. But after a major life transition and move, I just couldn&rsquo;t seem to get myself back on track.</p>
               <p>That&rsquo;s when Cylee became a coach, and I asked if I could be her first client. It was exactly what I needed. Through weekly sessions, motivational messages, and consistent check-ins, she helped me work through the mental and emotional barriers that were keeping me from making progress. Instead of focusing only on workouts and nutrition, she helped me understand what was really holding me back and gave me the support and accountability I needed to move forward.</p>
               <p>What made it even more valuable was knowing I was working with someone who truly understood. She&rsquo;s faced many of the same challenges with hormones, food, body changes, and life transitions, so her guidance came from both knowledge and personal experience.</p>
@@ -191,12 +219,16 @@
       </section>
 
       <section class="section-blush">
-        <div class="section-inner narrow" style="text-align:center;">
-          <p class="eyebrow muted">Free download</p>
-          <h2>The Clarity Starter Kit</h2>
-          <p style="color:var(--muted); font-size:1.05rem; font-weight:500; max-width:520px; margin:0 auto 12px;">Five tools to help you find your way back to yourself &mdash; the same ones used inside every coaching program. Free, delivered to your inbox.</p>
-          <p style="font-family:'Cormorant Garamond',Georgia,serif; font-style:italic; font-size:1.15rem; color:var(--teal); margin-bottom:28px;">The Whole-Life Snapshot &middot; Energy Audit &middot; Identity Reset Prompts &middot; 5-Pillar Checklist &middot; A Letter from Cylee</p>
-          <a class="button" href="resources.html">Get the free kit <span aria-hidden="true">&rarr;</span></a>
+        <div class="section-inner tight">
+          <div class="kit-banner">
+            <div class="kit-text">
+              <p class="sec-eyebrow">Free download</p>
+              <h2>The Clarity Starter Kit</h2>
+              <p class="kit-desc">Five tools to help you find your way back to yourself &mdash; free, and in your inbox in minutes.</p>
+              <p class="kit-tools">The Whole-Life Snapshot &middot; Energy Audit &middot; Identity Reset Prompts &middot; 5-Pillar Checklist &middot; A Letter from Cylee</p>
+            </div>
+            <a class="button" href="resources.html">Get the kit <span aria-hidden="true">&rarr;</span></a>
+          </div>
         </div>
       </section>
 
