@@ -927,3 +927,13 @@ cite {
 @media (max-width: 480px) {
   .resource-grid { gap: 16px; }
 }
+
+
+@keyframes target-glow {
+  0% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0.55); }
+  100% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0); }
+}
+
+.program-row:target {
+  animation: target-glow 2s ease-out 0.3s both;
+}
