@@ -1,263 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program Comparison | Clarity Into Momentum</title>
-    <meta name="description" content="Compare our three coaching programs: Clear. Focused. Forward. (4-week), Momentum (8-week), and The Whole-Life Rebuild (12-week). Founding prices available through December 2026.">
-    <meta property="og:title" content="Program Comparison | Clarity Into Momentum">
-    <meta property="og:description" content="Three coaching programs designed to help you overcome burnout and build momentum. Founding prices available through December 2026.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="08IGIMKR6mZ7WpsrmF1k-8PRtbGjcJkUVpFWmxPO6xU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compare Coaching Programs | Health &amp; Wellness Coach for Women | Utah</title>
+    <meta name="description" content="Compare three coaching programs for women — a 4-week reset, an 8-week momentum program, and a 12-week whole-life rebuild. Founding Cohort pricing through December 31.">
+    <!-- Open Graph / link preview -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Clarity Into Momentum">
+    <meta property="og:title" content="Compare Coaching Programs | Clarity Into Momentum">
+    <meta property="og:description" content="Which one sounds like you? Compare three coaching programs for women — founding pricing available through December 31.">
+    <meta property="og:image" content="https://clarityintomomentum.com/images/link-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://clarityintomomentum.com/programs-comparison.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compare Coaching Programs | Clarity Into Momentum">
+    <meta name="twitter:description" content="Which one sounds like you? Compare three coaching programs for women — founding pricing available through December 31.">
+    <meta name="twitter:image" content="https://clarityintomomentum.com/images/link-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <style>
+      .cmp-hero { text-align: center; padding: 3.5rem 1.25rem 2rem; }
+      .cmp-hero h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: clamp(2rem, 5vw, 2.8rem); color: #3d3530; margin: 0 0 0.5rem; }
+      .cmp-hero p { color: #6d625c; font-size: 1.02rem; margin: 0 auto; max-width: 34rem; line-height: 1.6; }
+      .cmp-wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.25rem; }
+      .cmp-quotes { display: grid; gap: 12px; margin: 1.5rem 0 3.5rem; }
+      .cmp-quote { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 14px; padding: 1.1rem 1.4rem; display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; text-decoration: none; transition: border-color .2s ease, transform .2s ease; }
+      .cmp-quote:hover { border-color: #2D7D7D; transform: translateY(-2px); }
+      .cmp-quote em { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 1.15rem; color: #3d3530; line-height: 1.5; flex: 1; min-width: 240px; }
+      .cmp-quote span { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; white-space: nowrap; }
+      .cmp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 0 0 3.5rem; }
+      .cmp-card { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 6rem; }
+      .cmp-card.featured { border: 2px solid #2D7D7D; }
+      .cmp-card-head { padding: 1.1rem 1.3rem; }
+      .cmp-card-head h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 1.3rem; color: #faf6f1; margin: 0; }
+      .cmp-card-head .cmp-meta { font-size: 0.78rem; font-weight: 600; margin: 5px 0 0; }
+      .cmp-flag { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A24B; font-weight: 700; margin: 0 0 5px; }
+      .cmp-card-body { padding: 1.3rem; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+      .cmp-tagline { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 1.1rem; margin: 0; }
+      .cmp-desc { font-size: 0.88rem; color: #3d3530; line-height: 1.65; margin: 0; }
+      .cmp-price-box { margin-top: auto; border-top: 1px solid #e7ded6; padding-top: 12px; }
+      .cmp-price { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.5rem; font-weight: 600; color: #2D7D7D; margin: 0; }
+      .cmp-price s { font-size: 0.85rem; color: #a49a92; font-family: Raleway, sans-serif; font-weight: 500; margin-left: 6px; }
+      .cmp-pay { font-size: 0.78rem; color: #6d625c; margin: 3px 0 0; }
+      .cmp-cta-row { margin-top: 14px; }
+      .cmp-cta-row .button { width: 100%; text-align: center; box-sizing: border-box; }
+      .cmp-path { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 14px; padding: 2rem 1.5rem; text-align: center; margin: 0 0 3rem; }
+      .cmp-path h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 1.6rem; color: #3d3530; margin: 0 0 0.4rem; }
+      .cmp-path > p { font-size: 0.92rem; color: #6d625c; margin: 0 0 1.4rem; }
+      .cmp-path-row { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+      .cmp-pill { padding: 8px 18px; border-radius: 999px; font-size: 0.82rem; font-weight: 600; }
+      .cmp-arrow { color: #C9A24B; font-size: 1.1rem; }
+      .cmp-note { text-align: center; font-size: 0.85rem; color: #6d625c; margin: 0 0 3.5rem; line-height: 1.6; }
+    </style>
+  </head>
+  <body>
     <header class="site-header">
-        <a class="brand" href="index.html">Clarity Into Momentum</a>
-        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-            <i data-lucide="menu"></i>
-        </button>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="start-here.html">Start here</a>
-            <a href="about.html">About</a>
-            <a href="work-with-me.html">Programs</a>
-            <a href="resources.html">Resources</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <a class="button button-small" href="contact.html">Book a clarity call</a>
+      <a class="brand" href="index.html">Clarity Into Momentum</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="start-here.html">Start here</a>
+        <a href="about.html">About</a>
+        <a class="active" href="work-with-me.html">Programs</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-small" href="contact.html">Book a clarity call</a>
     </header>
 
     <main>
-        <section class="hero" style="padding: 3rem 0; text-align: center;">
-            <div class="section-inner narrow">
-                <h1 style="font-family: Georgia, serif; font-size: 2.2rem; font-weight: 400; color: var(--text-primary); margin: 0 0 1rem;">Choose your path</h1>
-                <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 0 0 0.5rem;">Founding member pricing available through December 2026</p>
-                <p style="font-size: 0.95rem; color: var(--text-muted); margin: 0;">After that, prices increase. Lock in your rate now.</p>
+
+      <section class="cmp-hero">
+        <h1>Which one sounds like you?</h1>
+        <p>Start with the sentence that stings a little. That&rsquo;s your program.</p>
+      </section>
+
+      <div class="cmp-wrap">
+
+        <div class="cmp-quotes">
+          <a class="cmp-quote" href="#clear-focused-forward">
+            <em>&ldquo;I&rsquo;m doing everything right, so why do I feel so lost?&rdquo;</em>
+            <span style="color:#4A6B4D;">Clear. Focused. Forward. &darr;</span>
+          </a>
+          <a class="cmp-quote" href="#momentum">
+            <em>&ldquo;I know what to do. I just can&rsquo;t seem to keep doing it.&rdquo;</em>
+            <span style="color:#2D7D7D;">Momentum &darr;</span>
+          </a>
+          <a class="cmp-quote" href="#whole-life-rebuild">
+            <em>&ldquo;I don&rsquo;t recognize my life anymore &mdash; and I&rsquo;m ready to change that.&rdquo;</em>
+            <span style="color:#b0716f;">The Whole-Life Rebuild &darr;</span>
+          </a>
+        </div>
+
+        <div class="cmp-grid">
+
+          <article class="cmp-card" id="clear-focused-forward">
+            <div class="cmp-card-head" style="background:#7A9E7E;">
+              <h3>Clear. Focused. Forward.</h3>
+              <p class="cmp-meta" style="color:#E8EFE6;">4 weeks &middot; The reset</p>
             </div>
+            <div class="cmp-card-body">
+              <p class="cmp-tagline" style="color:#4A6B4D;">Find your thread again.</p>
+              <p class="cmp-desc">For the woman who feels foggy, flat, or far from herself &mdash; and wants clarity fast.</p>
+              <div class="cmp-price-box">
+                <p class="cmp-price">$360 <s>$400</s></p>
+                <p class="cmp-pay">One payment</p>
+                <div class="cmp-cta-row">
+                  <a class="button" href="contact.html">Book a clarity call</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cmp-card featured" id="momentum">
+            <div class="cmp-card-head" style="background:#2D7D7D;">
+              <p class="cmp-flag">Most chosen</p>
+              <h3>Momentum</h3>
+              <p class="cmp-meta" style="color:#cde5e0;">8 weeks &middot; The turning point</p>
+            </div>
+            <div class="cmp-card-body">
+              <p class="cmp-tagline" style="color:#2D7D7D;">Stop starting over.</p>
+              <p class="cmp-desc">For the woman tired of the start-stop cycle &mdash; ready to change the beliefs underneath it.</p>
+              <div class="cmp-price-box">
+                <p class="cmp-price">$720 <s>$800</s></p>
+                <p class="cmp-pay">or 2 payments of $360</p>
+                <div class="cmp-cta-row">
+                  <a class="button" href="contact.html">Book a clarity call</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cmp-card" id="whole-life-rebuild">
+            <div class="cmp-card-head" style="background:#b0716f;">
+              <h3>The Whole-Life Rebuild</h3>
+              <p class="cmp-meta" style="color:#f2dcdc;">12 weeks &middot; The deep work</p>
+            </div>
+            <div class="cmp-card-body">
+              <p class="cmp-tagline" style="color:#b0716f;">Come home to yourself.</p>
+              <p class="cmp-desc">For the woman done patching &mdash; ready to rebuild all nine areas of her life from the inside out.</p>
+              <div class="cmp-price-box">
+                <p class="cmp-price">$1,080 <s>$1,200</s></p>
+                <p class="cmp-pay">or 3 monthly payments of $360</p>
+                <div class="cmp-cta-row">
+                  <a class="button" href="contact.html">Book a clarity call</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <section class="cmp-path">
+          <h2>One path. Three depths.</h2>
+          <p>Every program uses the same proven tools. The difference is how deep we go.</p>
+          <div class="cmp-path-row">
+            <span class="cmp-pill" style="background:#E8EFE6; color:#4A6B4D;">The reset</span>
+            <span class="cmp-arrow" aria-hidden="true">&rarr;</span>
+            <span class="cmp-pill" style="background:#d9ebe8; color:#2D7D7D;">The turning point</span>
+            <span class="cmp-arrow" aria-hidden="true">&rarr;</span>
+            <span class="cmp-pill" style="background:#f2dcdc; color:#b0716f;">The deep work</span>
+          </div>
         </section>
 
-        <section style="padding: 2rem 0;">
-            <div class="section-inner">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 3rem;">
+        <p class="cmp-note">Founding Cohort rates are available through December 31, while I complete my NBHWC board certification.<br>Standard pricing begins January 1.</p>
 
-                    <!-- Clear. Focused. Forward. -->
-                    <div style="background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 12px;">
-                        <div>
-                            <h3 style="font-size: 16px; font-weight: 500; color: var(--text-primary); margin: 0 0 2px; font-family: Georgia, serif;">Clear. Focused. Forward.</h3>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0; font-weight: 500;">4-week program</p>
-                        </div>
+      </div>
 
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Founding price (through Dec 2026)</p>
-                            <p style="font-size: 28px; font-weight: 500; color: var(--text-accent); margin: 0;">$360</p>
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 4px 0 0;">One-time payment</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px; background: var(--surface-1); margin: 0 -1.5rem -1.5rem; padding: 12px 1.5rem 1.5rem;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Regular price (Jan 2027+)</p>
-                            <p style="font-size: 18px; font-weight: 500; color: var(--text-muted); margin: 0; text-decoration: line-through;">$400</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 500;">What's inside</p>
-                            <ul style="margin: 0; padding-left: 16px; font-size: 12px; color: var(--text-primary); line-height: 1.5;">
-                                <li>4 weekly sessions (60 min)</li>
-                                <li>Clarity foundation</li>
-                                <li>Values &amp; vision</li>
-                                <li>North Star direction</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Momentum -->
-                    <div style="background: var(--surface-2); border: 2px solid var(--border-accent); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 12px; position: relative;">
-                        <div style="background: var(--bg-accent); color: var(--text-accent); font-size: 11px; padding: 4px 12px; border-radius: var(--radius); font-weight: 500; width: fit-content; margin-bottom: 4px;">Most popular</div>
-
-                        <div>
-                            <h3 style="font-size: 16px; font-weight: 500; color: var(--text-primary); margin: 0 0 2px; font-family: Georgia, serif;">Momentum</h3>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0; font-weight: 500;">8-week program</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Founding price (through Dec 2026)</p>
-                            <p style="font-size: 28px; font-weight: 500; color: var(--text-accent); margin: 0;">$720</p>
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 4px 0 0;">or 2 payments of $360</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px; background: var(--surface-1); margin: 0 -1.5rem -1.5rem; padding: 12px 1.5rem 1.5rem;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Regular price (Jan 2027+)</p>
-                            <p style="font-size: 18px; font-weight: 500; color: var(--text-muted); margin: 0; text-decoration: line-through;">$800</p>
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 4px 0 0;">or 2 payments of $400</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 500;">What's inside</p>
-                            <ul style="margin: 0; padding-left: 16px; font-size: 12px; color: var(--text-primary); line-height: 1.5;">
-                                <li>8 weekly sessions (60 min)</li>
-                                <li>Everything in Clear +</li>
-                                <li>Energy &amp; habit mapping</li>
-                                <li>Limiting belief work</li>
-                                <li>Identity anchoring</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- The Whole-Life Rebuild -->
-                    <div style="background: var(--surface-2); border: 0.5px solid var(--border); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 12px;">
-                        <div>
-                            <h3 style="font-size: 16px; font-weight: 500; color: var(--text-primary); margin: 0 0 2px; font-family: Georgia, serif;">The Whole-Life Rebuild</h3>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0; font-weight: 500;">12-week program</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Founding price (through Dec 2026)</p>
-                            <p style="font-size: 28px; font-weight: 500; color: var(--text-accent); margin: 0;">$1,080</p>
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 4px 0 0;">or 3 monthly payments of $360</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px; background: var(--surface-1); margin: 0 -1.5rem -1.5rem; padding: 12px 1.5rem 1.5rem;">
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 0 0 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;">Regular price (Jan 2027+)</p>
-                            <p style="font-size: 18px; font-weight: 500; color: var(--text-muted); margin: 0; text-decoration: line-through;">$1,200</p>
-                            <p style="font-size: 11px; color: var(--text-secondary); margin: 4px 0 0;">or 3 monthly payments of $400</p>
-                        </div>
-
-                        <div style="border-top: 0.5px solid var(--border); padding-top: 12px;">
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px; font-weight: 500;">What's inside</p>
-                            <ul style="margin: 0; padding-left: 16px; font-size: 12px; color: var(--text-primary); line-height: 1.5;">
-                                <li>12 weekly sessions (60 min)</li>
-                                <li>Everything in Momentum +</li>
-                                <li>All 9 wellness domains</li>
-                                <li>Nervous system work</li>
-                                <li>Full identity rewrite</li>
-                                <li>Accountability circle</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Session breakdown -->
-        <section style="padding: 2rem 0; background: var(--surface-1);">
-            <div class="section-inner">
-                <h2 style="font-size: 1.5rem; font-weight: 500; color: var(--text-primary); margin: 0 0 2rem; font-family: Georgia, serif;">Session-by-session breakdown</h2>
-
-                <!-- Clear. Focused. Forward. -->
-                <div style="margin-bottom: 3rem;">
-                    <h3 style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem;">Clear. Focused. Forward. (4 weeks)</h3>
-                    <div style="display: grid; gap: 8px;">
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--border-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Week 1: Clear</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Wheel baseline (9 domains). Desire statement captured.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--border-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Week 2: Clear + Model</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Grief &amp; loss conversation. Values. The Clarity Model (CTFAR).</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--border-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Week 3: Focused</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">One direction. Shrink to undeniable. Environment design.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--border-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Week 4: Forward</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Wheel comparison. Desire statement read-back. Identity. North Star.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Momentum -->
-                <div style="margin-bottom: 3rem;">
-                    <h3 style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem;">Momentum (8 weeks)</h3>
-                    <div style="display: grid; gap: 8px;">
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--fill-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 1–2: Foundation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Intake. Wheel baseline. Coaching agreement. Energy mapping. Stress patterns.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--fill-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 3–4: Clarity</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Values clarification. Vision. Desire statement. Grief work. The Clarity Model.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--fill-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 5–6: Excavation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Limiting beliefs. Inner critic log. ACT defusion. Identity anchoring begins.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--fill-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 7–8: Integration &amp; Momentum</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Environment design. Accountability structures. Wheel re-check. North Star.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Whole-Life Rebuild -->
-                <div>
-                    <h3 style="font-size: 1.1rem; font-weight: 500; color: var(--text-primary); margin: 0 0 1rem;">The Whole-Life Rebuild (12 weeks)</h3>
-                    <div style="display: grid; gap: 8px;">
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 1–2: Foundation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Intake. Wheel baseline (9 domains). Energy mapping. Nervous system awareness.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 3–4: Clarity</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Values. Vision. Desire statement. Grief &amp; loss. The Clarity Model.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 5–6: Excavation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Limiting beliefs deep dive. Inner critic log. Wheel midpoint check. Identity rewrite.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 7–8: Reorientation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">ACT defusion. Belief systems examination. Full identity anchoring.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 9–10: Integration</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Environment design. Habit architecture. Accountability Circle. Recovery Playbook.</p>
-                        </div>
-                        <div style="padding: 12px; background: var(--surface-2); border-radius: var(--radius); border-left: 3px solid var(--text-accent);">
-                            <p style="font-size: 13px; font-weight: 500; color: var(--text-primary); margin: 0 0 4px;"><strong>Weeks 11–12: Momentum &amp; Graduation</strong></p>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Sustained action. Forward motion practice. Final Wheel assessment. Desire read-back. North Star. Graduation.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Key insight -->
-        <section style="padding: 2rem 0;">
-            <div class="section-inner narrow">
-                <div style="padding: 1.5rem; background: var(--bg-accent); border-radius: 12px; text-align: center;">
-                    <p style="font-size: 14px; color: var(--text-accent); margin: 0;"><strong>The emotional bookend:</strong> In every program, your desire statement is captured word-for-word early and read back to you in your final session. Same powerful tools in all three — just more depth, more time, and more transformation.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-band">
-            <div class="section-inner narrow">
-                <h2>Ready to start?</h2>
-                <p>Lock in founding prices before they increase in January.</p>
-                <a class="button" href="https://calendly.com/cylee1616" target="_blank" rel="noopener">Book a clarity call <span aria-hidden="true">→</span></a>
-            </div>
-        </section>
+      <section class="cta-band">
+        <div class="section-inner narrow">
+          <h2>Not sure which fits?</h2>
+          <p>That&rsquo;s exactly what the free clarity call is for. We&rsquo;ll talk through where you are, and I&rsquo;ll honestly tell you which program fits &mdash; or if none of them do.</p>
+          <a class="button" href="https://calendly.com/cylee1616" target="_blank" rel="noopener">Book a free clarity call <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </section>
 
     </main>
 
     <footer class="site-footer">
-        <a class="brand" href="index.html">Clarity Into Momentum</a>
-        <nav aria-label="Footer navigation">
-            <a href="start-here.html">Start here</a>
-            <a href="about.html">About</a>
-            <a href="work-with-me.html">Programs</a>
-            <a href="resources.html">Resources</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="privacy.html">Privacy policy</a>
-        </nav>
-        <p>&copy; 2026 Clarity Into Momentum</p>
+      <a class="brand" href="index.html">Clarity Into Momentum</a>
+      <nav aria-label="Footer navigation">
+        <a href="start-here.html">Start here</a>
+        <a href="about.html">About</a>
+        <a href="work-with-me.html">Programs</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy policy</a>
+      </nav>
+      <p>&copy; 2026 Clarity Into Momentum</p>
     </footer>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
