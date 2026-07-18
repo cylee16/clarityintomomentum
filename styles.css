@@ -169,7 +169,7 @@ h3 {
 }
 
 .button:hover {
-  border-color: rgba(64, 52, 46, 0.45);
+  border-color: rgba(46, 42, 38, 0.45);
   background: var(--warm-white);
   transform: translateY(-1px);
 }
@@ -389,7 +389,7 @@ blockquote {
   border-left: 4px solid #D4A0A0;
   background: #ffffff;
   border-radius: 0 12px 12px 0;
-  box-shadow: 0 18px 40px rgba(64, 52, 46, 0.10);
+  box-shadow: 0 18px 40px rgba(46, 42, 38, 0.10);
 }
 
 blockquote p {
