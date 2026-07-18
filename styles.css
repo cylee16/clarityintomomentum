@@ -761,7 +761,7 @@ cite {
   border-radius: 14px;
   overflow: hidden;
 }
-.program-row.featured { border: 2px solid #2D7D7D; }
+.program-row.featured { border: 2px solid #2D5F6F; }
 .program-row .topbar { height: 5px; }
 .program-row-inner {
   padding: 34px;
@@ -937,10 +937,13 @@ cite {
 
 
 @keyframes target-glow {
-  0% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0.55); }
-  100% { box-shadow: 0 0 0 4px rgba(45, 125, 125, 0); }
+  0% { box-shadow: 0 0 0 4px rgba(45, 95, 111, 0.55); }
+  100% { box-shadow: 0 0 0 4px rgba(45, 95, 111, 0); }
 }
 
 .program-row:target {
   animation: target-glow 2s ease-out 0.3s both;
 }
+
+.brand { display: inline-flex; align-items: center; }
+.brand svg text { letter-spacing: 0.5px; }
