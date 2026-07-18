@@ -77,7 +77,7 @@ if (copyEmailBtn) {
     '.cim-kit-card.cim-show{opacity:1;transform:translateY(0);}',
     '.cim-kit-card .cim-close{position:absolute;top:8px;right:10px;background:none;border:none;color:rgba(255,255,255,0.45);font-size:18px;cursor:pointer;padding:2px 8px;line-height:1;font-family:inherit;}',
     '.cim-kit-card .cim-close:hover{color:rgba(255,255,255,0.85);}',
-    '.cim-kit-card .cim-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(138,158,133,0.2);color:#2D5F6F;font-size:9px;font-weight:800;letter-spacing:0.1em;padding:3px 10px;border-radius:100px;margin-bottom:12px;}',
+    '.cim-kit-card .cim-badge{display:inline-flex;align-items:center;gap:4px;background:rgba(212,160,160,0.22);color:#2D5F6F;font-size:9px;font-weight:800;letter-spacing:0.1em;padding:3px 10px;border-radius:100px;margin-bottom:12px;}',
     '.cim-kit-card .cim-title{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;font-weight:600;color:#FFFFFF;line-height:1.15;margin:0 0 5px;}',
     '.cim-kit-card .cim-tagline{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:0.95rem;color:#E7DDD6;margin:0 0 12px;}',
     '.cim-kit-card .cim-desc{font-size:11.5px;color:#E7DDD6;line-height:1.55;margin:0 0 14px;}',
