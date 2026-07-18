@@ -77,7 +77,7 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "ProfessionalService",
+          "@type": ["ProfessionalService", "HealthAndBeautyBusiness"],
           "@id": "https://clarityintomomentum.com/#business",
           "name": "Clarity Into Momentum",
           "description": "Science-based health and wellness coaching for women navigating burnout, disconnection, and identity transitions. 1:1 virtual coaching programs from 4 to 12 weeks.",
@@ -96,7 +96,12 @@
             "addressCountry": "US"
           },
           "founder": { "@id": "https://clarityintomomentum.com/#cylee" },
-          "sameAs": ["https://calendly.com/cylee1616"]
+          "sameAs": ["https://calendly.com/cylee1616"],
+          "review": {
+            "@type": "Review",
+            "reviewBody": "She helped me understand what was really holding me back — and gave me the support and accountability I needed to move forward.",
+            "author": { "@type": "Person", "name": "Rae" }
+          }
         },
         {
           "@type": "Person",
