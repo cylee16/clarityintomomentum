@@ -27,48 +27,48 @@
     <link rel="stylesheet" href="styles.css">
   <style>
       .hero-b .section-inner { min-height: 0; padding-top: 56px; padding-bottom: 64px; }
-      .hero-b-card { background:#faf6f1; border:1px solid #e7ded6; border-radius:16px; padding: clamp(1.75rem, 4vw, 3rem); display:flex; flex-wrap:wrap; gap: clamp(1.5rem, 3vw, 2.5rem); align-items:center; width:100%; max-width: 980px; }
+      .hero-b-card { background:#FFFFFF; border:1px solid #E7DDD6; border-radius:16px; padding: clamp(1.75rem, 4vw, 3rem); display:flex; flex-wrap:wrap; gap: clamp(1.5rem, 3vw, 2.5rem); align-items:center; width:100%; max-width: 980px; }
       .hero-b-text { flex:1; min-width: 270px; text-align:left; }
       .hero-b .eyebrow { margin-bottom: 14px; }
       .hero-b h1 { font-size: clamp(1.85rem, 3.6vw, 2.5rem); font-weight: 500; }
       .hero-b .hero-copy { margin: 16px 0 0; font-size: clamp(0.98rem, 1.4vw, 1.08rem); line-height: 1.7; max-width: 34rem; }
       .hero-b .hero-actions { justify-content: flex-start; margin-top: 26px; gap: 12px; }
-      .hero-b .credentials { justify-content: flex-start; margin-top: 26px; border-top: 1px solid #e7ded6; padding-top: 18px; }
+      .hero-b .credentials { justify-content: flex-start; margin-top: 26px; border-top: 1px solid #E7DDD6; padding-top: 18px; }
       .hero-b-photo { flex: 0 0 auto; margin: 0 auto; }
-      .hero-b-photo img { width: min(215px, 62vw); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; border: 1px solid #e7ded6; display: block; }
+      .hero-b-photo img { width: min(215px, 62vw); aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; border: 1px solid #E7DDD6; display: block; }
       .hero-b-quotes { display:grid; grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); gap: 14px; width:100%; max-width: 980px; margin-top: 16px; }
-      .hero-b-quote { background:#faf6f1; border-radius:12px; border:1px solid #e7ded6; padding: 1.05rem 1.15rem; text-decoration:none; transition: transform .2s ease, box-shadow .2s ease; }
+      .hero-b-quote { background:#FFFFFF; border-radius:12px; border:1px solid #E7DDD6; padding: 1.05rem 1.15rem; text-decoration:none; transition: transform .2s ease, box-shadow .2s ease; }
       .hero-b-quote:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(61,53,48,0.07); }
       .hero-b-quote em { font-family:'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.04rem; line-height: 1.5; display: block; margin-bottom: 5px; }
-      .hero-b-quote small { font-size: 0.76rem; color:#6d625c; font-weight: 700; letter-spacing: 0.01em; }
+      .hero-b-quote small { font-size: 0.76rem; color:#6B6560; font-weight: 700; letter-spacing: 0.01em; }
       .hero-b-pull { width:100%; max-width: 640px; margin: 34px auto 0; text-align:center; }
-      .hero-b-pull p:first-child { font-family:'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; font-style: italic; color:#3d3530; margin: 0 0 5px; line-height: 1.6; }
-      .hero-b-pull p:last-child { font-size: 0.8rem; color:#6d625c; margin: 0; }
+      .hero-b-pull p:first-child { font-family:'Cormorant Garamond', Georgia, serif; font-size: 1.2rem; font-style: italic; color:#2E2A26; margin: 0 0 5px; line-height: 1.6; }
+      .hero-b-pull p:last-child { font-size: 0.8rem; color:#6B6560; margin: 0; }
       @media (max-width: 640px) { .hero-b-card { text-align:center; } .hero-b-text { text-align:center; } .hero-b .hero-actions, .hero-b .credentials { justify-content:center; } }
       .tight { padding: 56px 0 !important; min-height: 0 !important; }
-      .sec-eyebrow { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A24B; font-weight: 700; text-align: center; margin: 0 0 8px; }
+      .sec-eyebrow { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: #D4A0A0; font-weight: 700; text-align: center; margin: 0 0 8px; }
       .sec-title { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 500; text-align: center; margin: 0 0 6px; }
-      .sec-sub { font-size: 0.92rem; color: #6d625c; text-align: center; margin: 0 0 28px; }
+      .sec-sub { font-size: 0.92rem; color: #6B6560; text-align: center; margin: 0 0 28px; }
       .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; max-width: 62rem; margin: 0 auto; }
-      .who-tile { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 12px; padding: 1rem 1.1rem; }
+      .who-tile { background: #FFFFFF; border: 1px solid #E7DDD6; border-radius: 12px; padding: 1rem 1.1rem; }
       .who-tile h3 { font-family: Raleway, sans-serif; font-size: 0.88rem; font-weight: 700; color: #2D5F6F; margin: 0 0 4px; }
-      .who-tile p { font-size: 0.82rem; color: #6d625c; margin: 0; line-height: 1.6; }
+      .who-tile p { font-size: 0.82rem; color: #6B6560; margin: 0; line-height: 1.6; }
       .path-strip { display: flex; align-items: flex-start; gap: 6px; flex-wrap: wrap; justify-content: center; max-width: 58rem; margin: 0 auto; }
       .path-step { flex: 1; min-width: 130px; text-align: center; padding: 0.5rem 0.4rem; }
-      .path-step .num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; color: #C9A24B; font-weight: 600; margin: 0; line-height: 1; }
-      .path-step h3 { font-family: Raleway, sans-serif; font-size: 0.85rem; font-weight: 700; color: #3d3530; margin: 8px 0 3px; }
-      .path-step p { font-size: 0.76rem; color: #6d625c; margin: 0; line-height: 1.55; }
-      .path-arrow { color: #d9cfc5; font-size: 1.2rem; align-self: center; padding-top: 4px; }
+      .path-step .num { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; color: #D4A0A0; font-weight: 600; margin: 0; line-height: 1; }
+      .path-step h3 { font-family: Raleway, sans-serif; font-size: 0.85rem; font-weight: 700; color: #2E2A26; margin: 8px 0 3px; }
+      .path-step p { font-size: 0.76rem; color: #6B6560; margin: 0; line-height: 1.55; }
+      .path-arrow { color: #E7DDD6; font-size: 1.2rem; align-self: center; padding-top: 4px; }
       .quote-band { background: #2D5F6F; border-radius: 16px; padding: clamp(1.75rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 2.5rem); text-align: center; max-width: 56rem; margin: 0 auto; }
       .quote-band .sec-eyebrow { margin-bottom: 12px; }
-      .quote-band .pulled { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.35rem); font-style: italic; color: #faf6f1 !important; margin: 0 0 10px; line-height: 1.65; }
-      .quote-band .quote-cite { font-size: 0.82rem; color: #cde5e0; margin: 0; font-weight: 600; }
-      .quote-band .story-link { display: inline-block; margin-top: 12px; font-size: 0.82rem; color: #cde5e0; text-decoration: underline; }
-      .kit-banner { background: #fff; border: 1px solid #e7ded6; border-radius: 16px; padding: 1.5rem 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; max-width: 56rem; margin: 0 auto; text-align: left; }
+      .quote-band .pulled { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.35rem); font-style: italic; color: #FFFFFF !important; margin: 0 0 10px; line-height: 1.65; }
+      .quote-band .quote-cite { font-size: 0.82rem; color: #E3EDF0; margin: 0; font-weight: 600; }
+      .quote-band .story-link { display: inline-block; margin-top: 12px; font-size: 0.82rem; color: #E3EDF0; text-decoration: underline; }
+      .kit-banner { background: #fff; border: 1px solid #E7DDD6; border-radius: 16px; padding: 1.5rem 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap; max-width: 56rem; margin: 0 auto; text-align: left; }
       .kit-banner .kit-text { flex: 1; min-width: 250px; }
       .kit-banner h2 { font-size: 1.3rem; font-weight: 500; margin: 0 0 5px; text-align: left; }
       .kit-banner .sec-eyebrow { text-align: left; margin-bottom: 5px; }
-      .kit-banner .kit-desc { font-size: 0.88rem; color: #6d625c; margin: 0 0 6px; line-height: 1.6; }
+      .kit-banner .kit-desc { font-size: 0.88rem; color: #6B6560; margin: 0 0 6px; line-height: 1.6; }
       .kit-banner .kit-tools { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 0.92rem; color: #2D5F6F; margin: 0; }
       @media (max-width: 640px) { .kit-banner { text-align: center; } .kit-banner h2, .kit-banner .sec-eyebrow { text-align: center; } .path-arrow { display: none; } }
     </style>
@@ -154,8 +154,8 @@
           </div>
 
           <div class="hero-b-quotes">
-            <a class="hero-b-quote" href="programs-comparison.html#clear-focused-forward" style="border-top:4px solid #7A9E7E;">
-              <em style="color:#4A6B4D;">&ldquo;Why do I feel so lost?&rdquo;</em>
+            <a class="hero-b-quote" href="programs-comparison.html#clear-focused-forward" style="border-top:4px solid #8A9BA3;">
+              <em style="color:#2D5F6F;">&ldquo;Why do I feel so lost?&rdquo;</em>
               <small>The reset &middot; 4 weeks &rarr;</small>
             </a>
             <a class="hero-b-quote" href="programs-comparison.html#momentum" style="border-top:4px solid #2D5F6F;">
@@ -163,7 +163,7 @@
               <small>The turning point &middot; 8 weeks &rarr;</small>
             </a>
             <a class="hero-b-quote" href="programs-comparison.html#whole-life-rebuild" style="border-top:4px solid #D4A0A0;">
-              <em style="color:#b0716f;">&ldquo;I'm ready to rebuild.&rdquo;</em>
+              <em style="color:#B07D7D;">&ldquo;I'm ready to rebuild.&rdquo;</em>
               <small>The deep work &middot; 12 weeks &rarr;</small>
             </a>
           </div>
@@ -279,7 +279,7 @@
     </main>
 
                 <footer class="site-footer">
-      <a class="brand" href="index.html" aria-label="Clarity into Momentum — home"><svg class="brand-star" viewBox="0 0 80 80" width="22" height="22" aria-hidden="true" focusable="false"><path d="M40,4 Q45.4,34.6 76,40 Q45.4,45.4 40,76 Q34.6,45.4 4,40 Q34.6,34.6 40,4 Z" fill="#faf6f1"/></svg><span class="brand-text">Clarity <em>into</em> Momentum</span></a>
+      <a class="brand" href="index.html" aria-label="Clarity into Momentum — home"><svg class="brand-star" viewBox="0 0 80 80" width="22" height="22" aria-hidden="true" focusable="false"><path d="M40,4 Q45.4,34.6 76,40 Q45.4,45.4 40,76 Q34.6,45.4 4,40 Q34.6,34.6 40,4 Z" fill="#FFFFFF"/></svg><span class="brand-text">Clarity <em>into</em> Momentum</span></a>
       <nav aria-label="Footer navigation">
         <a href="start-here.html">Start here</a>
         <a href="about.html">About</a>
