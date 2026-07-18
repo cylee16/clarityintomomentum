@@ -37,7 +37,7 @@
     <style>
       /* Kit card styles */
       .kit-card {
-        background: var(--espresso);
+        background: var(--teal-dark);
         border-radius: 18px;
         overflow: hidden;
         display: grid;
@@ -49,23 +49,23 @@
       .kit-left { padding: 52px 48px; display: flex; flex-direction: column; }
       .kit-badge {
         display: inline-flex; align-items: center; gap: 6px;
-        background: var(--sage); color: #1f3320;
+        background: var(--rose); color: var(--ink);
         font-size: 10px; font-weight: 800; letter-spacing: 0.08em;
         padding: 5px 14px; border-radius: 100px;
         margin-bottom: 22px; align-self: flex-start;
       }
       .kit-left h2 {
         font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: 2.5rem; font-weight: 600; color: #faf6f1;
+        font-size: 2.5rem; font-weight: 600; color: #FFFFFF;
         line-height: 1.08; margin-bottom: 8px;
       }
       .kit-tagline {
         font-family: "Cormorant Garamond", Georgia, serif;
         font-style: italic; font-size: 1.15rem;
-        color: #b8ada6; margin-bottom: 18px;
+        color: #E7DDD6; margin-bottom: 18px;
       }
       .kit-desc {
-        color: #d1c6be; font-size: 0.92rem; font-weight: 500;
+        color: #E7DDD6; font-size: 0.92rem; font-weight: 500;
         line-height: 1.7; margin-bottom: 24px;
       }
       .kit-tools { display: flex; flex-direction: column; gap: 9px; margin-bottom: 28px; }
@@ -76,7 +76,7 @@
         font-size: 9px; font-weight: 800;
         display: flex; align-items: center; justify-content: center; flex-shrink: 0;
       }
-      .kit-tool span { font-size: 12.5px; font-weight: 600; color: #e8f0e6; }
+      .kit-tool span { font-size: 12.5px; font-weight: 600; color: #FFFFFF; }
       /* Form area */
       .form-area {
         background: rgba(255,255,255,0.07);
@@ -93,18 +93,18 @@
         width: 100%; background: rgba(255,255,255,0.1);
         border: 1px solid rgba(255,255,255,0.18); border-radius: 7px;
         padding: 11px 14px; font-family: "Raleway", Arial, sans-serif;
-        font-size: 13px; font-weight: 500; color: #faf6f1; outline: none;
+        font-size: 13px; font-weight: 500; color: #FFFFFF; outline: none;
         transition: border-color 0.2s;
       }
       .form-input::placeholder { color: rgba(255,255,255,0.35); font-weight: 400; }
-      .form-input:focus { border-color: var(--sage); background: rgba(255,255,255,0.14); }
+      .form-input:focus { border-color: var(--rose); background: rgba(255,255,255,0.14); }
       .form-submit {
-        width: 100%; background: var(--sage); color: #1f3320;
+        width: 100%; background: #FFFFFF; color: var(--teal);
         font-family: "Raleway", Arial, sans-serif; font-weight: 800;
         font-size: 14px; padding: 13px; border-radius: 8px;
         border: none; cursor: pointer; transition: background 0.2s;
       }
-      .form-submit:hover { background: #9ab89e; }
+      .form-submit:hover { background: var(--rose-soft); }
       .form-note { font-size: 11px; color: rgba(255,255,255,0.35); font-weight: 600; margin-top: 10px; text-align: center; }
       .form-privacy { font-size: 10px; color: rgba(255,255,255,0.22); font-weight: 600; margin-top: 5px; text-align: center; }
       .form-success {
@@ -114,12 +114,12 @@
       }
       .form-success h4 {
         font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: 1.4rem; font-weight: 600; color: #faf6f1; margin-bottom: 6px;
+        font-size: 1.4rem; font-weight: 600; color: #FFFFFF; margin-bottom: 6px;
       }
-      .form-success p { font-size: 12px; color: #b8ada6; font-weight: 500; }
+      .form-success p { font-size: 12px; color: #E7DDD6; font-weight: 500; }
       /* Right panel */
       .kit-right {
-        background: #2c2724; padding: 52px 40px;
+        background: #24505E; padding: 52px 40px;
         display: flex; flex-direction: column;
         justify-content: center; align-items: center; gap: 22px;
       }
@@ -131,20 +131,20 @@
       }
       .mock-lbl { font-size: 7.5px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
       .mock-ttl { font-family: "Cormorant Garamond", serif; font-size: 12px; font-weight: 600; text-align: center; line-height: 1.2; }
-      .mock-body { background: #faf6f1; padding: 8px 10px; display: flex; flex-direction: column; gap: 5px; }
-      .ml { height: 3px; border-radius: 2px; background: #e0d8cc; }
+      .mock-body { background: #FFFFFF; padding: 8px 10px; display: flex; flex-direction: column; gap: 5px; }
+      .ml { height: 3px; border-radius: 2px; background: #E7DDD6; }
       .ml.a { background: #2D5F6F; opacity: 0.5; }
       .ml.s { width: 55%; }
       .ml.m { width: 75%; }
-      .mock-caption { font-size: 11px; color: #6d625c; font-weight: 700; text-align: center; letter-spacing: 0.04em; }
+      .mock-caption { font-size: 11px; color: #6B6560; font-weight: 700; text-align: center; letter-spacing: 0.04em; }
       .trust-row { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
-      .trust-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #6d625c; font-weight: 700; }
-      .trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--sage); }
+      .trust-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #6B6560; font-weight: 700; }
+      .trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--rose); }
       /* What's inside */
       .inside-strip { background: var(--teal); }
       .inside-strip .section-inner h2 {
         font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: 1.7rem; font-weight: 600; color: #faf6f1;
+        font-size: 1.7rem; font-weight: 600; color: #FFFFFF;
         text-align: center; margin-bottom: 32px;
       }
       .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 14px; }
@@ -156,7 +156,7 @@
       .tool-num { font-size: 10px; font-weight: 800; letter-spacing: 0.1em; color: var(--blush); margin-bottom: 7px; }
       .tool-card h3 {
         font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: 1rem; font-weight: 600; color: #faf6f1; margin-bottom: 5px; line-height: 1.2;
+        font-size: 1rem; font-weight: 600; color: #FFFFFF; margin-bottom: 5px; line-height: 1.2;
       }
       .tool-card p { font-size: 10.5px; color: rgba(255,255,255,0.58); font-weight: 500; line-height: 1.5; }
       @media (max-width: 860px) {
@@ -220,28 +220,28 @@
                 <div class="mock">
                   <div class="mock-top" style="background:#2D5F6F;">
                     <span class="mock-lbl" style="color:rgba(255,255,255,0.7);">Clarity Into Momentum</span>
-                    <span class="mock-ttl" style="color:#faf6f1;">The Clarity<br><em>Starter Kit</em></span>
+                    <span class="mock-ttl" style="color:#FFFFFF;">The Clarity<br><em>Starter Kit</em></span>
                   </div>
                   <div class="mock-body"><div class="ml a"></div><div class="ml s"></div><div class="ml m"></div></div>
                 </div>
                 <div class="mock">
-                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #2D5F6F;">
-                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 01</span>
-                    <span class="mock-ttl" style="color:#faf6f1;">Whole-Life<br>Snapshot</span>
+                  <div class="mock-top" style="background:#2E2A26; border-left:4px solid #2D5F6F;">
+                    <span class="mock-lbl" style="color:#D4A0A0;">Tool 01</span>
+                    <span class="mock-ttl" style="color:#FFFFFF;">Whole-Life<br>Snapshot</span>
                   </div>
                   <div class="mock-body"><div class="ml"></div><div class="ml a s"></div><div class="ml m"></div></div>
                 </div>
                 <div class="mock">
-                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #7A9E7E;">
-                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 02</span>
-                    <span class="mock-ttl" style="color:#faf6f1;">Energy<br>Audit</span>
+                  <div class="mock-top" style="background:#2E2A26; border-left:4px solid #8A9BA3;">
+                    <span class="mock-lbl" style="color:#D4A0A0;">Tool 02</span>
+                    <span class="mock-ttl" style="color:#FFFFFF;">Energy<br>Audit</span>
                   </div>
                   <div class="mock-body"><div class="ml m"></div><div class="ml s"></div><div class="ml a"></div></div>
                 </div>
                 <div class="mock">
-                  <div class="mock-top" style="background:#3d3530; border-left:4px solid #D4A0A0;">
-                    <span class="mock-lbl" style="color:#c4a4a0;">Tool 05</span>
-                    <span class="mock-ttl" style="color:#faf6f1;">A Letter<br>from Cylee</span>
+                  <div class="mock-top" style="background:#2E2A26; border-left:4px solid #D4A0A0;">
+                    <span class="mock-lbl" style="color:#D4A0A0;">Tool 05</span>
+                    <span class="mock-ttl" style="color:#FFFFFF;">A Letter<br>from Cylee</span>
                   </div>
                   <div class="mock-body"><div class="ml s"></div><div class="ml"></div><div class="ml m"></div></div>
                 </div>
@@ -302,7 +302,7 @@
     </main>
 
                 <footer class="site-footer">
-      <a class="brand" href="index.html" aria-label="Clarity into Momentum — home"><svg class="brand-star" viewBox="0 0 80 80" width="22" height="22" aria-hidden="true" focusable="false"><path d="M40,4 Q45.4,34.6 76,40 Q45.4,45.4 40,76 Q34.6,45.4 4,40 Q34.6,34.6 40,4 Z" fill="#faf6f1"/></svg><span class="brand-text">Clarity <em>into</em> Momentum</span></a>
+      <a class="brand" href="index.html" aria-label="Clarity into Momentum — home"><svg class="brand-star" viewBox="0 0 80 80" width="22" height="22" aria-hidden="true" focusable="false"><path d="M40,4 Q45.4,34.6 76,40 Q45.4,45.4 40,76 Q34.6,45.4 4,40 Q34.6,34.6 40,4 Z" fill="#FFFFFF"/></svg><span class="brand-text">Clarity <em>into</em> Momentum</span></a>
       <nav aria-label="Footer navigation">
         <a href="start-here.html">Start here</a>
         <a href="about.html">About</a>
