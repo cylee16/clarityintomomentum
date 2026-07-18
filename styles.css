@@ -413,32 +413,33 @@ cite {
 }
 
 .cta-band p {
-  max-width: 850px;
-  margin: 22px auto 0;
-  font-size: 1.18rem;
-  font-weight: 600;
+  max-width: 680px;
+  margin: 12px auto 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.65;
 }
 
 .cta-band .button {
-  margin-top: 42px;
+  margin-top: 24px;
   border-color: rgba(56, 90, 56, 0.35);
   background: rgba(246, 241, 234, 0.24);
   color: #263f28;
 }
 
 .cta-band .fine-print {
-  margin-top: 20px;
-  font-size: 0.95rem;
-  font-weight: 800;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .site-footer {
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 36px;
+  gap: 28px;
   align-items: center;
-  min-height: 96px;
-  padding: 0 48px;
+  min-height: 68px;
+  padding: 16px 40px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
   background: var(--espresso);
@@ -457,7 +458,13 @@ cite {
 
 .site-footer p {
   color: #a6978e;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.78rem;
+  margin: 2px 0;
+}
+
+.footer-meta {
+  text-align: right;
 }
 
 .page-hero .section-inner {
