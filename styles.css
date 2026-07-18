@@ -89,7 +89,7 @@ h3 {
   min-height: 92px;
   padding: 0 48px;
   border-bottom: 1px solid var(--line);
-  background: rgba(138, 158, 133, 0.93);
+  background: rgba(250, 246, 241, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -120,7 +120,7 @@ h3 {
   color: var(--rose);
 }
 .site-nav a:visited {
-  color: #e8f0e6;
+  color: var(--muted);
 }
 .site-nav a:visited:hover {
   color: var(--rose);
@@ -947,3 +947,29 @@ cite {
 
 .brand { display: inline-flex; align-items: center; }
 .brand svg text { letter-spacing: 0.5px; }
+
+.site-header > .button {
+  border-color: #2D5F6F;
+  background: #2D5F6F;
+  color: var(--warm-white);
+}
+
+.site-header > .button:hover {
+  background: #24505e;
+  border-color: #24505e;
+}
+
+.brand svg {
+  display: block;
+  height: 44px;
+  width: 212px;
+}
+
+.site-footer .brand svg {
+  height: 36px;
+  width: 174px;
+}
+
+@media (max-width: 900px) {
+  .brand svg { height: 36px; width: 174px; }
+}
