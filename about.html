@@ -42,6 +42,27 @@
       "knowsAbout": ["health coaching", "wellness coaching", "burnout recovery", "habit change", "motivational interviewing", "women's wellness"]
     }
     </script>
+      <style>
+      .ab-intro { background:#faf6f1; border:1px solid #e7ded6; border-radius:16px; padding: clamp(1.5rem,3.5vw,2.5rem); display:flex; gap: clamp(1.25rem,3vw,2rem); align-items:center; flex-wrap:wrap; max-width: 60rem; margin: 0 auto; }
+      .ab-intro img { width: min(190px, 55vw); aspect-ratio: 4/5; object-fit: cover; object-position: center 15%; border-radius: 12px; border: 1px solid #e7ded6; display:block; margin: 0 auto; }
+      .ab-intro-text { flex:1; min-width: 260px; text-align:left; }
+      .ab-intro-text h2 { font-size: clamp(1.4rem,2.6vw,1.8rem); font-weight: 500; margin: 0 0 10px; }
+      .ab-intro-text p { font-size: 0.95rem; color: #6d625c; line-height: 1.7; margin: 0; }
+      .ab-story { max-width: 40rem; margin: 0 auto; display: grid; gap: 26px; }
+      .ab-chapter-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; margin: 0 0 6px; }
+      .ab-story p.body { font-size: 0.95rem; color: #3d3530; line-height: 1.8; margin: 0; }
+      .ab-pull { border-left: 3px solid #C9A24B; padding-left: 1.4rem; }
+      .ab-pull p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-style: italic; color: #2D7D7D; line-height: 1.65; margin: 0; }
+      .ab-creds { background: #2D7D7D; border-radius: 16px; padding: 1.25rem 1.5rem; display: flex; gap: 10px 22px; justify-content: center; align-items: center; flex-wrap: wrap; max-width: 60rem; margin: 0 auto; }
+      .ab-creds a, .ab-creds span.cred { font-size: 0.72rem; color: #faf6f1; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+      .ab-creds a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(249,246,240,0.4); }
+      .ab-creds a:hover { text-decoration-color: #C9A24B; }
+      .ab-creds .dot { color: #C9A24B; }
+      .ab-values { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; max-width: 60rem; margin: 0 auto; }
+      .ab-value { background: #faf6f1; border: 1px solid #e7ded6; border-radius: 12px; padding: 1.25rem 1.35rem; border-top: 4px solid var(--vc, #7A9E7E); }
+      .ab-value h3 { font-family: Raleway, sans-serif; font-size: 0.95rem; font-weight: 700; margin: 0 0 6px; color: var(--vt, #4A6B4D); }
+      .ab-value p { font-size: 0.85rem; color: #6d625c; line-height: 1.65; margin: 0; }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -68,23 +89,40 @@
       </section>
 
       <section class="section-white">
-        <div class="split-layout">
-          <div class="portrait-panel" aria-label="Photo of Cylee" style="background: none; padding: 0; min-height: 460px; overflow: hidden; border-radius: 12px; box-shadow: 0 24px 48px rgba(64,52,46,0.13);">
-            <img src="images/cylee-headshot.jpg" alt="Cylee, health and wellness coach" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; border-radius: 12px; display: block;">
-          </div>
-          <div class="content-stack">
-            <p class="eyebrow muted">My story</p>
-            <h2>From overwhelmed to on purpose.</h2>
-            <p>There came a point in my life when I realized that doing more wasn&rsquo;t the answer. I was busy, I was trying hard, and I still felt dim &mdash; disconnected from myself and unsure of what I actually wanted. I was tired. I was stressed. And somewhere along the way, I stopped feeling like myself anymore. (Not to mention perimenopause hitting like a freight train!)</p>
-            <p>The woman who used to be excited and outgoing just wanted to close off and crawl into bed. I kept waiting for the season to pass on its own &mdash; for things to magically click back into place. But they didn&rsquo;t. And eventually I had to admit that what I really needed wasn&rsquo;t another to-do list or a stricter routine. I needed to reconnect with who I actually was underneath all of it. Sound familiar?</p>
-            <p>That season was the beginning of a real shift. It pushed me to get serious about understanding why we get stuck, how real change actually happens, and what it looks like to build a life with intention instead of just momentum.</p>
-            <p>I pursued my certifications through Health Coach Institute &mdash; earning both my Life &amp; Nutrition and Advanced Health Coach credentials &mdash; and I'm currently working toward board certification through NBHWC. But more than credentials, what I bring to this work is lived experience: the kind that makes me genuinely curious about your story, not just your goals.</p>
-            <p>I work with women who are motivated but stuck &mdash; busy moms, women navigating midlife, women who feel like they've lost the thread of who they are. I see you. And I believe you already have more than enough to move forward. You just need a clearer path.</p>
-            <div class="credentials left">
-              <span><i data-lucide="badge-check"></i> <a href="documents/health-life-coach-seal.pdf" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:2px;">Certified Health &amp; Life Coach &middot; HCI</a></span>
-              <span><i data-lucide="badge-check"></i> <a href="documents/hci-certificate.pdf" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:2px;">Certified Health &amp; Wellness Coach &middot; Advanced Health Coach Program</a></span>
-              <span><i data-lucide="clock"></i> NBHWC Candidate</span>
+        <div class="section-inner">
+          <div class="ab-intro">
+            <img src="images/cylee-headshot.jpg" alt="Cylee, certified health and wellness coach in Cache Valley, Utah">
+            <div class="ab-intro-text">
+              <p class="eyebrow muted" style="margin-bottom:10px;">My story</p>
+              <h2>From overwhelmed to on purpose.</h2>
+              <p>There came a point when I realized that doing more wasn&rsquo;t the answer. Here&rsquo;s how I found my way back &mdash; and why it became my life&rsquo;s work.</p>
             </div>
+          </div>
+
+          <div class="ab-story" style="margin-top: 40px;">
+            <div>
+              <p class="ab-chapter-label" style="color:#4A6B4D;">The breaking point</p>
+              <p class="body">I was busy, I was trying hard, and I still felt dim &mdash; disconnected from myself and unsure of what I actually wanted. I was tired. I was stressed. And somewhere along the way, I stopped feeling like myself anymore. (Not to mention perimenopause hitting like a freight train!) The woman who used to be excited and outgoing just wanted to close off and crawl into bed. I kept waiting for the season to pass on its own &mdash; for things to magically click back into place. But they didn&rsquo;t.</p>
+            </div>
+            <div class="ab-pull">
+              <p>&ldquo;What I really needed wasn&rsquo;t another to-do list or a stricter routine. I needed to reconnect with who I actually was underneath all of it.&rdquo;</p>
+            </div>
+            <div>
+              <p class="ab-chapter-label" style="color:#2D7D7D;">The shift</p>
+              <p class="body">Sound familiar? That season was the beginning of a real change. It pushed me to get serious about understanding why we get stuck, how real change actually happens, and what it looks like to build a life with intention instead of just momentum. I pursued my certifications through Health Coach Institute &mdash; earning both my Life &amp; Nutrition and Advanced Health Coach credentials &mdash; and I&rsquo;m currently working toward board certification through NBHWC.</p>
+            </div>
+            <div>
+              <p class="ab-chapter-label" style="color:#b0716f;">Why it matters for you</p>
+              <p class="body">More than credentials, what I bring to this work is lived experience: the kind that makes me genuinely curious about your story, not just your goals. I work with women who are motivated but stuck &mdash; busy moms, women navigating midlife, women who feel like they&rsquo;ve lost the thread of who they are. I see you. And I believe you already have more than enough to move forward. You just need a clearer path.</p>
+            </div>
+          </div>
+
+          <div class="ab-creds" style="margin-top: 40px;">
+            <a href="documents/health-life-coach-seal.pdf" target="_blank" rel="noopener">&#10003; Certified Health &amp; Life Coach &middot; HCI</a>
+            <span class="dot">&middot;</span>
+            <a href="documents/hci-certificate.pdf" target="_blank" rel="noopener">&#10003; Advanced Health Coach</a>
+            <span class="dot">&middot;</span>
+            <span class="cred">&#9203; NBHWC Candidate</span>
           </div>
         </div>
       </section>
@@ -95,19 +133,16 @@
             <p class="eyebrow muted">What I believe</p>
             <h2>The values that guide this work</h2>
           </div>
-          <div class="card-grid four">
-            <article class="card">
-              <i data-lucide="heart"></i>
+          <div class="ab-values">
+            <article class="ab-value" style="--vc:#7A9E7E; --vt:#4A6B4D;">
               <h3>You already have what it takes</h3>
               <p>My role isn't to fix you &mdash; it's to help you see your own strengths clearly and move toward what matters with confidence.</p>
             </article>
-            <article class="card">
-              <i data-lucide="footprints"></i>
+            <article class="ab-value" style="--vc:#2D7D7D; --vt:#2D7D7D;">
               <h3>Small steps create real change</h3>
               <p>Sustainable momentum isn't built in grand gestures. It's built in honest, well-placed steps taken consistently over time.</p>
             </article>
-            <article class="card">
-              <i data-lucide="layers"></i>
+            <article class="ab-value" style="--vc:#D4A0A0; --vt:#b0716f;">
               <h3>Your whole life matters</h3>
               <p>Health isn't just what you eat or how you move. We look at mindset, relationships, purpose, and energy &mdash; the full picture.</p>
             </article>
