@@ -1,18 +1,24 @@
 :root {
-  --cream: #f7ede8;        /* heroes -> blush */
-  --warm-white: #faf6f1;   /* warm cream sections, buttons, toggle */
-  --blush: #f7ede8;
-  --rose: #c4a4a0;         /* dusty mauve accent */
-  --rose-soft: #f0e3df;    /* mauve-tint pill background */
-  --teal: #2D5F6F;
-  --teal-dark: #24505e;
-  --sage: #8a9e85;
-  --sage-dark: #2c3f2c;
-  --espresso: #3d3530;
-  --ink: #3d3530;
-  --muted: #6d625c;
-  --line: #e7ded6;
-  --shadow: 0 18px 42px rgba(64, 52, 46, 0.08);
+  /* ── Clarity Into Momentum — Brand Color Guide ──
+     Core: Deep Teal · Dusty Rose · Slate   Ground: Cream · Warm Ink
+     Nothing outside this palette goes on the site. */
+  --teal: #2D5F6F;        /* Primary — buttons, links, logo, CTA bands */
+  --teal-dark: #24505E;   /* Footer / dark bands */
+  --teal-soft: #E3EDF0;   /* Teal tint — quiet pills */
+  --rose: #D4A0A0;        /* Accent — eyebrow labels, tags, small marks */
+  --rose-dark: #B07D7D;   /* Rose text on light grounds */
+  --rose-soft: #F4E6E6;   /* Rose tint — pill backgrounds */
+  --slate: #8A9BA3;       /* Muted — italic "into", quiet detail */
+  --cream: #F5ECE7;       /* Page background */
+  --ink: #2E2A26;         /* Headlines & body */
+  --muted: #6B6560;       /* Secondary text */
+  --line: #E7DDD6;        /* Borders */
+  --surface: #FFFFFF;     /* Card surfaces */
+  /* aliases kept so legacy rules resolve */
+  --blush: #F5ECE7;
+  --warm-white: #FFFFFF;
+  --espresso: #2E2A26;
+  --shadow: 0 18px 42px rgba(46, 42, 38, 0.09);
   --radius: 8px;
 }
 
@@ -26,7 +32,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--blush);
+  background: var(--cream);
   color: var(--ink);
   font-family: "Raleway", Arial, sans-serif;
   font-size: 17px;
@@ -91,7 +97,7 @@ h3 {
   min-height: 92px;
   padding: 0 48px;
   border-bottom: 1px solid var(--line);
-  background: rgba(250, 246, 241, 0.94);
+  background: rgba(245, 236, 231, 0.94);
   backdrop-filter: blur(16px);
 }
 
@@ -152,11 +158,11 @@ h3 {
   justify-content: center;
   gap: 8px;
   padding: 0 25px;
-  border: 1px solid rgba(64, 52, 46, 0.28);
+  border: 1px solid var(--teal);
   border-radius: 10px;
-  background: rgba(255, 253, 249, 0.72);
-  color: var(--espresso);
-  font-weight: 800;
+  background: var(--teal);
+  color: #FFFFFF;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
@@ -238,7 +244,7 @@ h3 {
 }
 
 .eyebrow.muted {
-  color: #c894a7;
+  color: var(--rose);
 }
 
 .hero-copy {
@@ -284,7 +290,7 @@ h3 {
   padding: 0 15px;
   border-radius: 999px;
   background: var(--rose-soft);
-  color: #985b70;
+  color: #B07D7D;
   font-size: 0.88rem;
   font-weight: 800;
 }
@@ -335,7 +341,7 @@ h3 {
   width: 28px;
   height: 28px;
   margin-bottom: 24px;
-  color: #c996aa;
+  color: #D4A0A0;
 }
 
 .card p {
@@ -359,7 +365,7 @@ h3 {
 .process-card span {
   display: block;
   margin-bottom: 18px;
-  color: #d2a9ba;
+  color: #D4A0A0;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 3rem;
   font-weight: 600;
@@ -380,7 +386,7 @@ h3 {
 blockquote {
   margin: 0;
   padding: 38px 44px;
-  border-left: 4px solid #ce98ad;
+  border-left: 4px solid #D4A0A0;
   background: #ffffff;
   border-radius: 0 12px 12px 0;
   box-shadow: 0 18px 40px rgba(64, 52, 46, 0.10);
@@ -405,13 +411,13 @@ cite {
 }
 
 .cta-band {
-  background: var(--sage);
-  color: var(--sage-dark);
+  background: var(--teal);
+  color: #FFFFFF;
   text-align: center;
 }
 
 .cta-band h2 {
-  color: var(--sage-dark);
+  color: #FFFFFF;
 }
 
 .cta-band p {
@@ -424,9 +430,9 @@ cite {
 
 .cta-band .button {
   margin-top: 24px;
-  border-color: rgba(56, 90, 56, 0.35);
-  background: rgba(246, 241, 234, 0.24);
-  color: #263f28;
+  border-color: #FFFFFF;
+  background: #FFFFFF;
+  color: var(--teal);
 }
 
 .cta-band .fine-print {
@@ -444,8 +450,8 @@ cite {
   padding: 16px 40px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  background: var(--espresso);
-  color: #d1c6be;
+  background: var(--teal-dark);
+  color: #E7DDD6;
   font-size: 0.95rem;
 }
 
@@ -455,14 +461,15 @@ cite {
 
 .site-footer nav {
   gap: 26px;
-  color: #d9b7c5;
+  color: #D4A0A0;
 }
 
 .site-footer p {
-  color: #a6978e;
-  font-weight: 600;
+  color: #E7DDD6;
+  font-weight: 500;
   font-size: 0.78rem;
   margin: 2px 0;
+  opacity: 0.85;
 }
 
 .footer-meta {
@@ -510,8 +517,8 @@ cite {
   border-radius: var(--radius);
   background:
     linear-gradient(rgba(183, 203, 177, 0.72), rgba(183, 203, 177, 0.72)),
-    radial-gradient(circle at 35% 20%, #f6f1ea, transparent 34%),
-    #d8c2cc;
+    radial-gradient(circle at 35% 20%, #FFFFFF, transparent 34%),
+    #F4E6E6;
 }
 
 .portrait-panel svg {
@@ -793,7 +800,7 @@ cite {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.2rem;
   font-style: italic;
-  color: #8a7f78;
+  color: #6B6560;
   margin: 0 0 18px;
 }
 .program-sub {
@@ -846,7 +853,7 @@ cite {
   line-height: 1;
 }
 .price-sub { font-size: 0.82rem; color: var(--muted); font-weight: 700; margin: 4px 0 0; }
-.price-std { font-size: 0.76rem; color: #9a8c84; font-weight: 600; margin: 8px 0 0; line-height: 1.4; }
+.price-std { font-size: 0.76rem; color: #6B6560; font-weight: 600; margin: 8px 0 0; line-height: 1.4; }
 
 @media (max-width: 860px) {
   .program-row-inner { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
