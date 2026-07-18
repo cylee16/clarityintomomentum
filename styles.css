@@ -945,13 +945,60 @@ cite {
   animation: target-glow 2s ease-out 0.3s both;
 }
 
-.brand { display: inline-flex; align-items: center; }
-.brand svg text { letter-spacing: 0.5px; }
 
+
+
+
+
+
+/* ── Brand lockup: star mark + wordmark ── */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-star {
+  flex: none;
+  display: block;
+}
+
+.brand-text {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #2D5F6F;
+  white-space: nowrap;
+}
+
+.brand-text em {
+  font-style: italic;
+  font-weight: 400;
+  color: #8A9BA3;
+}
+
+.site-footer .brand-text {
+  font-size: 1.35rem;
+  color: var(--warm-white);
+}
+
+.site-footer .brand-text em {
+  color: #D4A0A0;
+}
+
+/* Compact header CTA */
 .site-header > .button {
-  border-color: #2D5F6F;
+  min-height: 38px;
+  padding: 0 18px;
+  border: 1px solid #2D5F6F;
+  border-radius: 999px;
   background: #2D5F6F;
   color: var(--warm-white);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .site-header > .button:hover {
@@ -959,17 +1006,7 @@ cite {
   border-color: #24505e;
 }
 
-.brand svg {
-  display: block;
-  height: 44px;
-  width: 212px;
-}
-
-.site-footer .brand svg {
-  height: 36px;
-  width: 174px;
-}
-
 @media (max-width: 900px) {
-  .brand svg { height: 36px; width: 174px; }
+  .brand-text { font-size: 1.3rem; }
+  .brand-star { width: 22px; height: 22px; }
 }
