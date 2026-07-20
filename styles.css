@@ -169,8 +169,9 @@ h3 {
 }
 
 .button:hover {
-  border-color: rgba(46, 42, 38, 0.45);
-  background: var(--warm-white);
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+  color: #FFFFFF;
   transform: translateY(-1px);
 }
 
@@ -432,6 +433,12 @@ cite {
   margin-top: 24px;
   border-color: #FFFFFF;
   background: #FFFFFF;
+  color: var(--teal);
+}
+
+.cta-band .button:hover {
+  background: var(--rose-soft);
+  border-color: var(--rose-soft);
   color: var(--teal);
 }
 
