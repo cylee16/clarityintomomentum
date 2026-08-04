@@ -28,4 +28,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://clarityintomomentum.com/sitemap.xml
+Sitemap: https://www.clarityintomomentum.com/sitemap.xml
