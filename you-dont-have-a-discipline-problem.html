@@ -42,7 +42,7 @@ gtag('config', 'G-DPK6CVTZ3L');
 "description": "Why being hard on yourself keeps you stuck, and what helps instead. How self-criticism blocks follow-through, and gentle, practical ways to break the loop.",
 "url": "https://clarityintomomentum.com/you-dont-have-a-discipline-problem.html",
 "datePublished": "2026-09-22",
-"dateModified": "2026-09-22",
+"dateModified": "2026-09-23",
 "author": { "@type": "Person", "name": "Cylee Pressley" },
 "publisher": { "@type": "Organization", "name": "Clarity Into Momentum" },
 "mainEntityOfPage": "https://clarityintomomentum.com/you-dont-have-a-discipline-problem.html",
@@ -56,14 +56,30 @@ gtag('config', 'G-DPK6CVTZ3L');
 .article-body { max-width: 40rem; margin: 0 auto; }
 .article-body p { font-size: 1.05rem; color: var(--ink); line-height: 1.85; margin: 0 0 20px; }
 .article-body h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 500; color: var(--teal-dark); margin: 44px 0 16px; }
-.article-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 600; color: var(--teal); margin: 26px 0 8px; }
 .article-body em { font-style: italic; }
-.article-body ol { margin: 0 0 20px; padding-left: 1.4rem; }
-.article-body ol li { font-size: 1.05rem; color: var(--ink); line-height: 1.8; margin-bottom: 10px; }
-.article-body .step { margin: 0 0 20px; }
-.article-body .step strong { color: var(--teal); }
-.article-body .pull { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-style: italic; color: var(--teal); line-height: 1.55; border-left: 3px solid var(--rose); padding-left: 20px; margin: 28px 0; }
-.article-body .scope-note { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--rose); border-radius: 10px; padding: 1.1rem 1.3rem; font-size: 0.98rem; color: var(--muted); line-height: 1.7; margin: 28px 0; }
+/* Drop cap on the opening paragraph */
+.article-body .lead::first-letter { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.4rem; line-height: 0.72; font-weight: 600; color: var(--teal); float: left; padding: 8px 10px 0 0; }
+/* Short-version summary box */
+.summary-box { background: #E3EDF0; border-radius: 12px; padding: 1.2rem 1.4rem; margin: 0 0 28px; }
+.summary-box .sv-label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); font-weight: 700; margin: 0 0 8px; }
+.summary-box p.sv-text { font-size: 1rem; color: var(--ink); line-height: 1.65; margin: 0; }
+/* Boxed loop list */
+.loop-box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 0.6rem 1.4rem; margin: 0 0 24px; }
+.loop-box ol { margin: 0; padding-left: 1.3rem; }
+.loop-box ol li { font-size: 1.02rem; color: var(--ink); line-height: 1.7; margin: 12px 0; padding-left: 6px; }
+.loop-box ol li::marker { color: var(--teal); font-weight: 700; }
+/* Centered pull-quote */
+.pull { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: clamp(1.3rem, 2.6vw, 1.6rem); color: var(--teal); text-align: center; line-height: 1.45; margin: 32px auto; max-width: 34rem; }
+/* Research lead-ins */
+.article-body .research p { margin-bottom: 18px; }
+.article-body .research strong { color: var(--teal-dark); }
+/* Numbered step cards */
+.step-card { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--rose); border-radius: 11px; padding: 1rem 1.3rem; margin: 0 0 12px; }
+.step-card p { font-size: 1.02rem; line-height: 1.65; margin: 0; }
+.step-card strong { color: var(--teal); }
+.step-aside { font-size: 1rem; color: var(--muted); font-style: italic; line-height: 1.75; margin: 0 0 22px; padding-left: 4px; }
+/* Scope note */
+.scope-note { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--rose); border-radius: 11px; padding: 1.1rem 1.4rem; font-size: 0.98rem; color: var(--muted); line-height: 1.7; margin: 28px 0; font-style: italic; }
 </style>
 </head>
 <body>
@@ -94,7 +110,13 @@ gtag('config', 'G-DPK6CVTZ3L');
 <section class="section-cream">
 <div class="section-inner">
 <div class="article-body">
-<p>You know what you should do. You just don&rsquo;t do it.</p>
+
+<div class="summary-box">
+<p class="sv-label">The short version</p>
+<p class="sv-text">What keeps you stuck usually isn&rsquo;t willpower &mdash; it&rsquo;s the critical voice that shows up the moment you slip. Kindness after a miss, not harshness, is what makes trying again feel possible.</p>
+</div>
+
+<p class="lead">You know what you should do. You just don&rsquo;t do it.</p>
 <p>Or you do it for a while. Then a busy week hits, a day goes sideways, and you&rsquo;re back where you started, saying the same things to yourself you always say.</p>
 <p>You might describe yourself as fine. In a good place, but&hellip; On maintenance. Not in crisis, not really thriving. Stuck in a loop you can&rsquo;t quite explain.</p>
 <p>From my own life and from working with women who say exactly those words, I&rsquo;ve come to believe this: what keeps you stuck usually isn&rsquo;t a lack of motivation, information, or willpower. It&rsquo;s the voice that shows up the moment you slip.</p>
@@ -102,6 +124,7 @@ gtag('config', 'G-DPK6CVTZ3L');
 
 <h2>The loop that looks like a discipline problem</h2>
 <p>It usually goes like this:</p>
+<div class="loop-box">
 <ol>
 <li>You set an intention. Move more, go to bed earlier, stop eating after dinner, finally deal with the pile.</li>
 <li>Life happens, and you miss. One day, then two.</li>
@@ -109,20 +132,23 @@ gtag('config', 'G-DPK6CVTZ3L');
 <li>That feels awful, so you get away from it. You shut down, you scroll, you decide you&rsquo;ll start fresh Monday. Or you quietly stop trying, because trying again means risking that feeling again.</li>
 <li>The miss becomes evidence. You tell yourself you&rsquo;re just not a person who follows through. The loop tightens.</li>
 </ol>
+</div>
 <p>Most of us believe the critic is what keeps us in line. <em>If I stopped being hard on myself, I&rsquo;d never get anything done.</em> That belief is worth checking against the evidence, because the evidence mostly points the other way.</p>
 
 <h2>What the research says</h2>
+<div class="research">
 <p><strong>Self-criticism is built on threat.</strong> Psychologist Paul Gilbert, who developed compassion-focused therapy, describes self-criticism as the mind&rsquo;s threat system turned inward. In that state you&rsquo;re braced and defensive, which is useful in a crisis and poor for planning or trying something new. Brain-imaging work with his colleagues has found that self-criticism and self-reassurance engage noticeably different brain regions.</p>
 <p><strong>Shame tends to make us hide.</strong> June Tangney&rsquo;s research separates two feelings. Guilt says &ldquo;I did a bad thing.&rdquo; Shame says &ldquo;I am bad.&rdquo; In her work, guilt is more often linked to repair and trying again, and shame to hiding and withdrawal. Most inner critics speak fluent shame.</p>
 <p><strong>Self-compassion can increase effort.</strong> In one of four experiments by Breines and Chen (2012), students who failed a hard test and were guided to be understanding toward themselves spent more time studying for the next one than students in the comparison groups, including one given a self-esteem boost. In another, people reflecting on something they regretted were more motivated to make amends and not repeat it.</p>
 <p><strong>Harshness can turn one slip into a spiral.</strong> Researchers call it the disinhibition effect. People trying hard to restrict what they eat often eat more after breaking a rule. In a study by Adams and Leary (2007), the most restrictive eaters who were guided toward self-compassion after eating a doughnut felt less distressed and ate less afterward.</p>
 <p><strong>Forgiving yourself is linked to less procrastination.</strong> Wohl, Pychyl, and Bennett (2010) followed 119 first-year students through two midterms. Among those who had procrastinated on the first exam, the ones who forgave themselves for it procrastinated less before the second.</p>
+</div>
 <p>To be honest about the research: these are mostly small studies, often with college students. But they point the same way, and larger reviews link self-compassion to more healthy habits, like eating well, exercising, and sleeping, not fewer. Being kind to yourself after a miss doesn&rsquo;t make you lazy. It makes trying again feel possible.</p>
 
 <h2>Self-compassion isn&rsquo;t letting yourself off the hook</h2>
 <p>This is where most women push back, and it&rsquo;s a fair objection.</p>
 <p>Self-compassion doesn&rsquo;t mean lowering your standards. You keep the standard and drop the punishment.</p>
-<p class="pull">Punishment asks: What&rsquo;s wrong with me? Accountability asks: What happened, and what&rsquo;s next?</p>
+<p class="pull">&ldquo;Punishment asks: what&rsquo;s wrong with me? Accountability asks: what happened, and what&rsquo;s next?&rdquo;</p>
 <p>The first question looks backward and has no useful answer. The second looks forward and almost always does.</p>
 <p>Here&rsquo;s a question that helps me when the critic is loud: <em>How would the kindest, wisest presence I can imagine speak to me about this?</em> For me, that&rsquo;s God &mdash; grace I can&rsquo;t earn and don&rsquo;t have to. For you it might be something else. Either way, that voice almost never sounds like the critic. The critic says <em>earn your way back.</em> Grace, in any form, says you don&rsquo;t have to punish yourself to meet the standard &mdash; you just have to keep it, and begin again.</p>
 <p>Compassion-focused therapy uses this same move on purpose: picture a compassionate other, because a kinder voice is easier to borrow before it&rsquo;s easy to find in yourself.</p>
@@ -130,13 +156,13 @@ gtag('config', 'G-DPK6CVTZ3L');
 
 <h2>What we actually do about it</h2>
 <p>This is less about affirmations and more about small, practical moves you can make on a regular Tuesday.</p>
-<div class="step"><strong>1. Notice it and name it.</strong> You don&rsquo;t have to win an argument with the critic, or force a positive thought in its place. You just have to see it. <em>There&rsquo;s that voice again.</em> Acceptance and Commitment Therapy calls this &ldquo;defusion&rdquo;: stepping back far enough to see a thought as a thought, not the truth. That bit of distance is often enough to interrupt the spiral.</div>
-<p>These days, when I hear it, I say something like: <em>Oh look, my mind is pointing out the negative again. I&rsquo;m choosing the positive today. I don&rsquo;t need that voice right now. It will only bring my energy down.</em></p>
-<div class="step"><strong>2. Ask a better question.</strong> Swap &ldquo;Why can&rsquo;t I just&hellip;&rdquo; for &ldquo;What got in the way, and what&rsquo;s one small thing I could try?&rdquo; Motivational interviewing research suggests that pushing people tends to make them argue for staying the same. Drawing out their own reasons works better. That&rsquo;s true when the pushing comes from inside your own head, too.</div>
-<div class="step"><strong>3. Set a floor for the hard days.</strong> All-or-nothing is the critic&rsquo;s favorite game. Decide ahead of time what the smallest version of your habit is: ten minutes, one vegetable, lights out half an hour earlier. On a bad day, the floor counts. That&rsquo;s how one rough Wednesday stops costing you the whole week.</div>
-<p>I had a workout program I loved on my good days. On the hard days, I&rsquo;d open it, feel overwhelmed, and not work out at all. Now my floor is simple: <em>Can I walk for 15 minutes?</em></p>
-<div class="step"><strong>4. Give yourself permission to rest.</strong> If rest has to be earned, you&rsquo;ll never feel you&rsquo;ve earned enough. Rest isn&rsquo;t the reward for finishing the list. It&rsquo;s part of what makes the list possible. Rest was built into creation in the very first week, before anyone had done a thing to earn it.</div>
-<div class="step"><strong>5. Measure what moved, not only what didn&rsquo;t.</strong> The critic keeps a very selective scorecard. In my programs we use a Whole-Life Assessment across nine areas of life, revisited at key checkpoints along the way, so you can see where things are actually shifting. Women almost always already know where their leverage point is. What they&rsquo;re usually missing is proof that it&rsquo;s working.</div>
+<div class="step-card"><p><strong>1. Notice it and name it.</strong> You don&rsquo;t have to win an argument with the critic, or force a positive thought in its place. You just have to see it. <em>There&rsquo;s that voice again.</em> Acceptance and Commitment Therapy calls this &ldquo;defusion&rdquo;: stepping back far enough to see a thought as a thought, not the truth. That bit of distance is often enough to interrupt the spiral.</p></div>
+<p class="step-aside">These days, when I hear it, I say something like: Oh look, my mind is pointing out the negative again. I&rsquo;m choosing the positive today. I don&rsquo;t need that voice right now. It will only bring my energy down.</p>
+<div class="step-card"><p><strong>2. Ask a better question.</strong> Swap &ldquo;Why can&rsquo;t I just&hellip;&rdquo; for &ldquo;What got in the way, and what&rsquo;s one small thing I could try?&rdquo; Motivational interviewing research suggests that pushing people tends to make them argue for staying the same. Drawing out their own reasons works better. That&rsquo;s true when the pushing comes from inside your own head, too.</p></div>
+<div class="step-card"><p><strong>3. Set a floor for the hard days.</strong> All-or-nothing is the critic&rsquo;s favorite game. Decide ahead of time what the smallest version of your habit is: ten minutes, one vegetable, lights out half an hour earlier. On a bad day, the floor counts. That&rsquo;s how one rough Wednesday stops costing you the whole week.</p></div>
+<p class="step-aside">I had a workout program I loved on my good days. On the hard days, I&rsquo;d open it, feel overwhelmed, and not work out at all. Now my floor is simple: Can I walk for 15 minutes?</p>
+<div class="step-card"><p><strong>4. Give yourself permission to rest.</strong> If rest has to be earned, you&rsquo;ll never feel you&rsquo;ve earned enough. Rest isn&rsquo;t the reward for finishing the list. It&rsquo;s part of what makes the list possible. Rest was built into creation in the very first week, before anyone had done a thing to earn it.</p></div>
+<div class="step-card"><p><strong>5. Measure what moved, not only what didn&rsquo;t.</strong> The critic keeps a very selective scorecard. In my programs we use a Whole-Life Assessment across nine areas of life, revisited at key checkpoints along the way, so you can see where things are actually shifting. Women almost always already know where their leverage point is. What they&rsquo;re usually missing is proof that it&rsquo;s working.</p></div>
 
 <h2>What changes when the critic loosens its grip</h2>
 <p>When women tell me what they actually want, it&rsquo;s rarely a number, though sometimes it is. Most want to trust themselves to keep the promises they make. They want to feel proud of themselves, not thinner or busier. They want to feel lighter, calmer, less braced. They want to stop beating themselves up when a day doesn&rsquo;t go as planned. They want to have energy and feel good.</p>
