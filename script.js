@@ -104,7 +104,7 @@ if (copyEmailBtn) {
     '<p class="cim-title">Feeling stuck?</p>',
     '<p class="cim-mobile-sub">Free Clarity Starter Kit</p>',
     '<p class="cim-tagline">Start with the free Clarity Starter Kit.</p>',
-    '<p class="cim-desc">Five tools to help you see clearly where you are and what your next step might be.</p>',
+    '<p class="cim-desc">Six tools to help you see clearly where you are and what your next step might be.</p>',
     '<a class="cim-btn" href="resources.html">Get the kit →</a>'
   ].join('');
 
